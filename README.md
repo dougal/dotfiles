@@ -13,3 +13,5 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule init
     git submodule update
 
+Additional documentation: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
