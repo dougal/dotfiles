@@ -51,6 +51,3 @@ nmap \q :nohlsearch<CR> " ...unhighlight search.
 set rtp+=/usr/local/opt/fzf
 nmap \p :FZF<CR>
 
-" Setup ALE linter.
-execute pathogen#infect()
-
