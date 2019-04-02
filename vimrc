@@ -5,6 +5,8 @@ filetype plugin indent on
 
 " Invisibles the same as TextMate.
 set listchars=tab:▸\ ,eol:¬
+" Hide and show invisibles quickly.
+nmap \i :set list!<CR>
 
 " Disable arrow keys
 nnoremap <Left> :echo "No left for you!"<CR>
