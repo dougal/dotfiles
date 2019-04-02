@@ -34,3 +34,6 @@
 [submodule "closetag.vim"]
 	path = closetag.vim
 	url = git@github.com:docunext/closetag.vim.git
+[submodule "bundle/vim-sleuth"]
+	path = bundle/vim-sleuth
+	url = git@github.com:tpope/vim-sleuth.git
