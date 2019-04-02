@@ -10,12 +10,12 @@
 [submodule "bundle/vim-sensible"]
 	path = bundle/vim-sensible
 	url = git@github.com:tpope/vim-sensible.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = git@github.com:vim-syntastic/syntastic.git
 [submodule "bundle/vim-css-color"]
 	path = bundle/vim-css-color
 	url = https://github.com/ap/vim-css-color
 [submodule "bundle/fzf.vim"]
 	path = bundle/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = git@github.com:w0rp/ale.git

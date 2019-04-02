@@ -47,16 +47,10 @@ set smartcase " ...except when search includes uppercase letters.
 set hlsearch " Highlight the current search...
 nmap \q :nohlsearch<CR> " ...unhighlight search.
 
-" Syntastic recommended settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
 " Setup basic fzf Vim plugin.
 set rtp+=/usr/local/opt/fzf
 nmap \p :FZF<CR>
+
+" Setup ALE linter.
+execute pathogen#infect()
 
