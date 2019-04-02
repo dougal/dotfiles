@@ -3,10 +3,12 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+let mapleader = "\\"
+
 " Invisibles the same as TextMate.
 set listchars=tab:▸\ ,eol:¬
 " Hide and show invisibles quickly.
-nmap \i :set list!<CR>
+nmap <leader>i :set list!<CR>
 
 " Disable arrow keys
 nnoremap <Left> :echo "No left for you!"<CR>
@@ -47,9 +49,9 @@ set incsearch " Highlight as expression is typed.
 set ignorecase " Ignore case...
 set smartcase " ...except when search includes uppercase letters.
 set hlsearch " Highlight the current search...
-nmap \q :nohlsearch<CR> " ...unhighlight search.
+nmap <leader>q :nohlsearch<CR> " ...unhighlight search.
 
 " Setup basic fzf Vim plugin.
 set rtp+=/usr/local/opt/fzf
-nmap \p :FZF<CR>
+nmap <leader>p :FZF<CR>
 
