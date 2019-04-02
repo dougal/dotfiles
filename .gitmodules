@@ -31,3 +31,6 @@
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = git@github.com:tpope/vim-endwise.git
+[submodule "closetag.vim"]
+	path = closetag.vim
+	url = git@github.com:docunext/closetag.vim.git
