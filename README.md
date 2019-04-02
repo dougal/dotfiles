@@ -7,6 +7,12 @@ Create symlinks:
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
+Install fzf:
+
+    brew install fzf
+
+  Instructions for other OS: https://github.com/junegunn/fzf#installation
+
 Switch to the `~/.vim` directory, and fetch submodules:
 
     cd ~/.vim
