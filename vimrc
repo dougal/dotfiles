@@ -56,5 +56,6 @@ nmap <leader>q :nohlsearch<CR> " ...unhighlight search.
 
 " Setup basic fzf Vim plugin.
 set rtp+=/usr/local/opt/fzf
-nmap <leader>p :FZF<CR>
+nmap <leader>t :FZF<CR>
+nmap <leader>y :Buffers<CR>
 
