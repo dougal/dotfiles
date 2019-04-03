@@ -13,6 +13,7 @@ source $abbr_path/sublime.fish
 
 # Load initializers.
 set -l init_path $config_path/initializers
+source $init_path/fzf_ag.fish
 source $init_path/go.fish
 source $init_path/homebrew.fish
 source $init_path/rbenv.fish
