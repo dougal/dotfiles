@@ -3,6 +3,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" Place swapfiles in tmp rather than working directory.
+:set dir=/tmp
+
 let mapleader = " "
 
 " Invisibles the same as TextMate.
