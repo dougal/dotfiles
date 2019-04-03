@@ -3,7 +3,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-let mapleader = "\\"
+let mapleader = " "
 
 " Invisibles the same as TextMate.
 set listchars=tab:▸\ ,eol:¬
