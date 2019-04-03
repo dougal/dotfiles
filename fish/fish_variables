@@ -1,15 +1,20 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export EDITOR:vim
+SETUVAR --export FZF_ALT_C_COMMAND:ag\x20\x2d\x2dnocolor\x20\x2dg\x20\x22\x22
+SETUVAR --export FZF_CTRL_T_COMMAND:ag\x20\x2d\x2dnocolor\x20\x2dg\x20\x22\x22
+SETUVAR --export FZF_DEFAULT_COMMAND:ag\x20\x2d\x2dnocolor\x20\x2dg\x20\x22\x22
+SETUVAR --export FZF_DEFAULT_OPTS:\x0a\x2d\x2dcolor\x20fg\x3a242\x2cbg\x3a236\x2chl\x3a65\x2cfg\x2b\x3a15\x2cbg\x2b\x3a239\x2chl\x2b\x3a108\x0a\x2d\x2dcolor\x20info\x3a108\x2cprompt\x3a109\x2cspinner\x3a108\x2cpointer\x3a168\x2cmarker\x3a168\x0a
 SETUVAR __fish_classic_git_prompt_initialized:\x1d
 SETUVAR __fish_init_1_22_0:\x1d
 SETUVAR __fish_init_1_50_0:\x1d
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
+SETUVAR __fish_init_3_x:\x1d
 SETUVAR _fish_abbr_b:bundle\x20exec
 SETUVAR _fish_abbr_bh:brew
 SETUVAR _fish_abbr_bi:bundle\x20install
 SETUVAR _fish_abbr_brs:bundle\x20exec\x20rspec
-SETUVAR _fish_abbr_cat:bat
 SETUVAR _fish_abbr_ccat:cat
 SETUVAR _fish_abbr_cpd:bundle\x20exec\x20cap\x20production\x20deploy
 SETUVAR _fish_abbr_cpdq:bundle\x20exec\x20cap\x20production\x20deploy\x3aquick
@@ -17,15 +22,22 @@ SETUVAR _fish_abbr_ffm:ffmpeg\x20\x2dhide_banner
 SETUVAR _fish_abbr_ffp:ffprobe\x20\x2dhide_banner
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
+SETUVAR _fish_abbr_gap:git\x20add\x20\x2d\x2dpatch
 SETUVAR _fish_abbr_gb:git\x20branch
+SETUVAR _fish_abbr_gbp:git\x20branch\x20\x2d\x2dpatch
 SETUVAR _fish_abbr_gc:git\x20commit
 SETUVAR _fish_abbr_gca:git\x20commit\x20\x2da
 SETUVAR _fish_abbr_gco:git\x20checkout
+SETUVAR _fish_abbr_gcof:git\x20checkout\x20\x2df
+SETUVAR _fish_abbr_gd:git\x20diff
+SETUVAR _fish_abbr_gdm:git\x20diff\x20\x7c\x20mvim\x20\x2dR\x20\x2d
 SETUVAR _fish_abbr_gds:git\x20diff\x20\x7c\x20subl
 SETUVAR _fish_abbr_gi:gem\x20install\x20\x2d\x2dno\x2dri\x20\x2d\x2dno\x2drdoc
 SETUVAR _fish_abbr_glog:git\x20log\x20\x2d\x2dgraph\x20\x2d\x2dpretty\x3doneline\x20\x2d\x2dabbrev\x2dcommit\x20\x2d\x2ddecorate\x20\x2d\x2d
+SETUVAR _fish_abbr_got:gotidy
 SETUVAR _fish_abbr_gpom:git\x20push\x20origin\x20master
 SETUVAR _fish_abbr_gpp:git\x20pull\x3b\x20and\x20git\x20push
+SETUVAR _fish_abbr_grm:git\x20rm
 SETUVAR _fish_abbr_gst:git\x20status
 SETUVAR _fish_abbr_gu:gem\x20update\x20\x2d\x2dno\x2dri\x20\x2d\x2dno\x2drdoc
 SETUVAR _fish_abbr_gui:gem\x20uninstall
@@ -33,8 +45,8 @@ SETUVAR _fish_abbr_hb:brew
 SETUVAR _fish_abbr_hbi:brew\x20install
 SETUVAR _fish_abbr_hbs:brew\x20services
 SETUVAR _fish_abbr_j:jump
+SETUVAR _fish_abbr_m:mvim
 SETUVAR _fish_abbr_r:bundle\x20exec\x20rails
-SETUVAR _fish_abbr_rbc:Syntax\x20OK
 SETUVAR _fish_abbr_rdm:bundle\x20exec\x20rake\x20db\x3amigrate\x20db\x3atest\x3aprepare
 SETUVAR _fish_abbr_s:subl
 SETUVAR fish_color_autosuggestion:555\x1eyellow
