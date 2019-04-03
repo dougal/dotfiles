@@ -31,9 +31,9 @@
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = git@github.com:tpope/vim-endwise.git
-[submodule "closetag.vim"]
-	path = closetag.vim
-	url = git@github.com:docunext/closetag.vim.git
 [submodule "bundle/vim-sleuth"]
 	path = bundle/vim-sleuth
 	url = git@github.com:tpope/vim-sleuth.git
+[submodule "bundle/closetag.vim"]
+	path = bundle/closetag.vim
+	url = git@github.com:docunext/closetag.vim.git
