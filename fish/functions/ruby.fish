@@ -2,3 +2,7 @@
 function rbc
   find . -name "*.rb" | xargs ruby -w -c
 end
+
+function rbt
+  bundle exec rake test TEST=$argv
+end
