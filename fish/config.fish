@@ -3,7 +3,6 @@ set -l config_path $HOME/.config/fish
 # Load abbreviations.
 set -l abbr_path $config_path/abbreviations
 source $abbr_path/bundler.fish
-source $abbr_path/bat.fish
 source $abbr_path/ffmpeg.fish
 source $abbr_path/gem.fish
 source $abbr_path/git.fish
