@@ -37,3 +37,6 @@
 [submodule "bundle/closetag.vim"]
 	path = bundle/closetag.vim
 	url = git@github.com:docunext/closetag.vim.git
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = git@github.com:mileszs/ack.vim.git

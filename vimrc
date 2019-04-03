@@ -69,3 +69,8 @@ map <C-l> <C-w>l
 command! Q q
 command! W w
 
+" Us ag as the cross-file search.
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+

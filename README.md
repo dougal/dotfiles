@@ -13,6 +13,12 @@ Install fzf:
 
   Instructions for other OS: https://github.com/junegunn/fzf#installation
 
+Install ag:
+
+    brew install ag
+
+  Instructions for other OS: https://github.com/ggreer/the_silver_searcher#installing
+
 Switch to the `~/.vim` directory, and fetch submodules:
 
     cd ~/.vim
