@@ -59,3 +59,8 @@ set rtp+=/usr/local/opt/fzf
 nmap <leader>t :FZF<CR>
 nmap <leader>y :Buffers<CR>
 
+" Faster switching of windows.
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
