@@ -28,5 +28,5 @@ source $func_path/ruby.fish
 set fish_greeting
 
 # Editor
-set EDITOR vim
+set -Ux EDITOR 'vim'
 set -g fish_user_paths "/usr/local/opt/qt@5.5/bin" $fish_user_paths
