@@ -52,7 +52,7 @@ set incsearch " Highlight as expression is typed.
 set ignorecase " Ignore case...
 set smartcase " ...except when search includes uppercase letters.
 set hlsearch " Highlight the current search...
-nmap <leader>q :nohlsearch<CR> " ...unhighlight search.
+nmap <leader>f :nohlsearch<CR> " ...unhighlight search.
 
 " Setup basic fzf Vim plugin.
 set rtp+=/usr/local/opt/fzf
@@ -95,3 +95,5 @@ vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 " From: https://pascalprecht.github.io/posts/pretty-print-json-in-vim/
 map :jsonpp :%!python -m json.tool
 
+" Close the current buffer without closing the window.
+nnoremap <leader>q :Bwipeout<CR>

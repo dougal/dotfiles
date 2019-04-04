@@ -43,3 +43,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git@github.com:godlygeek/tabular.git
+[submodule "bundle/vim-bbye"]
+	path = bundle/vim-bbye
+	url = git@github.com:moll/vim-bbye.git
