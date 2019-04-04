@@ -92,5 +92,6 @@ vmap <Leader>a,, :Tabularize /,\zs<CR>
 nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 
+" From: https://pascalprecht.github.io/posts/pretty-print-json-in-vim/
 map :jsonpp :%!python -m json.tool
 
