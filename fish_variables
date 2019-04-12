@@ -38,6 +38,11 @@ SETUVAR _fish_abbr_got:gotidy
 SETUVAR _fish_abbr_gpom:git\x20push\x20origin\x20master
 SETUVAR _fish_abbr_gpp:git\x20pull\x3b\x20and\x20git\x20push
 SETUVAR _fish_abbr_grm:git\x20rm
+SETUVAR _fish_abbr_gs:git\x20stash
+SETUVAR _fish_abbr_gsa:git\x20stash\x20apply
+SETUVAR _fish_abbr_gsl:git\x20stash\x20list
+SETUVAR _fish_abbr_gsp:git\x20stash\x20pop
+SETUVAR _fish_abbr_gss:git\x20stash\x20save
 SETUVAR _fish_abbr_gst:git\x20status
 SETUVAR _fish_abbr_gu:gem\x20update\x20\x2d\x2dno\x2dri\x20\x2d\x2dno\x2drdoc
 SETUVAR _fish_abbr_gui:gem\x20uninstall

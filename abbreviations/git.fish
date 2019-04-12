@@ -13,3 +13,8 @@ abbr -a gpom git push origin master
 abbr -a gpp "git pull; and git push"
 abbr -a grm git rm
 abbr -a gst git status
+abbr -a gs git stash
+abbr -a gsa git stash apply
+abbr -a gsl git stash list
+abbr -a gsp git stash pop
+abbr -a gss git stash save
