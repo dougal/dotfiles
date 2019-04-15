@@ -53,7 +53,6 @@ SETUVAR _fish_abbr_j:jump
 SETUVAR _fish_abbr_m:mvim
 SETUVAR _fish_abbr_r:bundle\x20exec\x20rails
 SETUVAR _fish_abbr_rdm:bundle\x20exec\x20rake\x20db\x3amigrate\x20db\x3atest\x3aprepare
-SETUVAR _fish_abbr_s:subl
 SETUVAR fish_color_autosuggestion:555\x1eyellow
 SETUVAR fish_color_command:005fd7\x1epurple
 SETUVAR fish_color_comment:red

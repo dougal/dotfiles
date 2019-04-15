@@ -9,7 +9,6 @@ source $abbr_path/git.fish
 source $abbr_path/homebrew.fish
 source $abbr_path/macvim.fish
 source $abbr_path/rails.fish
-source $abbr_path/sublime.fish
 
 # Load initializers.
 set -l init_path $config_path/initializers
