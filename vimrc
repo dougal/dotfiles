@@ -42,6 +42,9 @@ highlight GitGutterAdd    guifg=#009900 guibg=#222222 ctermfg=2 ctermbg=Black
 highlight GitGutterChange guifg=#bbbb00 guibg=#222222 ctermfg=3 ctermbg=Black
 highlight GitGutterDelete guifg=#ff2222 guibg=#222222 ctermfg=1 ctermbg=Black
 
+" Have jbuilder files be syntax highlighted as Ruby.
+au BufReadPost *.jbuilder set syntax=ruby
+
 " Move up or down one line regardless of line wrapping.
 " From: https://statico.github.io/vim.html
 nmap j gj
