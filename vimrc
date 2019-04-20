@@ -68,6 +68,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Open new windows below or to the right.
+" Feels more natural than default.
+set splitbelow
+set splitright
+
 " Help out my fat fingers
 command! Q q
 command! W w
