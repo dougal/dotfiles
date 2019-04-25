@@ -34,6 +34,7 @@ SETUVAR _fish_abbr_gdm:git\x20diff\x20\x7c\x20mvim\x20\x2dR\x20\x2d
 SETUVAR _fish_abbr_gi:gem\x20install\x20\x2d\x2dno\x2dri\x20\x2d\x2dno\x2drdoc
 SETUVAR _fish_abbr_glog:git\x20log\x20\x2d\x2dgraph\x20\x2d\x2dpretty\x3doneline\x20\x2d\x2dabbrev\x2dcommit\x20\x2d\x2ddecorate\x20\x2d\x2d
 SETUVAR _fish_abbr_got:gotidy
+SETUVAR _fish_abbr_gpo:git\x20push\x20origin
 SETUVAR _fish_abbr_gpom:git\x20push\x20origin\x20master
 SETUVAR _fish_abbr_gpp:git\x20pull\x3b\x20and\x20git\x20push
 SETUVAR _fish_abbr_gres:git\x20reset
