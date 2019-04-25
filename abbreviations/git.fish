@@ -10,6 +10,7 @@ abbr -a gdm "git diff | mvim -R -"
 abbr -a glog git log --graph --pretty=oneline --abbrev-commit --decorate --
 abbr -a gpom git push origin master
 abbr -a gpp "git pull; and git push"
+abbr -a gr git revert
 abbr -a grm git rm
 abbr -a gst git status
 abbr -a gs git stash
