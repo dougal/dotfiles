@@ -17,6 +17,7 @@ source $init_path/go.fish
 source $init_path/homebrew.fish
 source $init_path/macvim.fish
 source $init_path/macvim.fish
+source $init_path/nodenv.fish
 source $init_path/rbenv.fish
 source $init_path/scripts.fish
 
