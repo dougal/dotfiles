@@ -8,8 +8,8 @@ abbr -a gcof git checkout -f
 abbr -a gd "git diff"
 abbr -a gdm "git diff | mvim -R -"
 abbr -a glog git log --graph --pretty=oneline --abbrev-commit --decorate --
-abbr -a gpo git push origin
-abbr -a gpom git push origin master
+abbr -a gpl git pull
+abbr -a gps git push
 abbr -a gpp "git pull; and git push"
 abbr -a gres git reset
 abbr -a grev git revert
