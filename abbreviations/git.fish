@@ -12,6 +12,7 @@ abbr -a gpl git pull
 abbr -a gps git push
 abbr -a gpp "git pull; and git push"
 abbr -a gres git reset
+abbr -a gresh git reset HEAD
 abbr -a grev git revert
 abbr -a grm git rm
 abbr -a gst git status

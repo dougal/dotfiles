@@ -38,6 +38,7 @@ SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gpp:git\x20pull\x3b\x20and\x20git\x20push
 SETUVAR _fish_abbr_gps:git\x20push
 SETUVAR _fish_abbr_gres:git\x20reset
+SETUVAR _fish_abbr_gresh:git\x20reset\x20HEAD
 SETUVAR _fish_abbr_grev:git\x20revert
 SETUVAR _fish_abbr_grm:git\x20rm
 SETUVAR _fish_abbr_gs:git\x20stash
