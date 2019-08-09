@@ -9,7 +9,7 @@ filetype plugin indent on
 let mapleader = " "
 
 " Invisibles the same as TextMate.
-set listchars=tab:>·,eol:¬
+set listchars=tab:->,space:·,eol:¬
 " Hide and show invisibles quickly.
 nmap <leader>i :set list!<CR>
 
