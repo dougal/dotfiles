@@ -58,6 +58,10 @@ SETUVAR _fish_abbr_r:bundle\x20exec\x20rails
 SETUVAR _fish_abbr_rc_2D_api:ssh\x20\x2dt\x20internal\x2dprocessor\x2einternal\x2ereachora\x2ecom\x20railsc_reachora_api
 SETUVAR _fish_abbr_rc_2D_raconteur:ssh\x20\x2dt\x20event\x2dprocessor\x2einternal\x2ereachora\x2ecom\x20railsc_raconteur
 SETUVAR _fish_abbr_rdm:bundle\x20exec\x20rake\x20db\x3amigrate\x20db\x3atest\x3aprepare
+SETUVAR _fish_abbr_y:yarn
+SETUVAR _fish_abbr_ya:yarn\x20add
+SETUVAR _fish_abbr_yad:yarn\x20add\x20\x2dD
+SETUVAR _fish_abbr_yi:yarn\x20install
 SETUVAR fish_color_autosuggestion:555\x1eyellow
 SETUVAR fish_color_command:005fd7\x1epurple
 SETUVAR fish_color_comment:red
