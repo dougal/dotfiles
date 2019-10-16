@@ -12,7 +12,15 @@ set MARKPATH $HOME/.marks
 # Jumps to the named mark.
 # Takes mark name as an argument.
 function jump
-  cd $MARKPATH/$argv; or echo "No such mark: $argv"
+  set mark $MARKPATH/$argv
+
+  if test -e $mark
+  # Jumps to the symlinked mark directory,
+  # then jumps to the non-symlinked location.
+    cd $MARKPATH/$argv; and cd (pwd -P)
+  else
+    echo "No such mark: $argv"
+  end
 end
 
 # Creates a mark for the current working directory.
