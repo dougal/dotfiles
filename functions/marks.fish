@@ -15,8 +15,8 @@ function jump
   set mark $MARKPATH/$argv
 
   if test -e $mark
-  # Jumps to the symlinked mark directory,
-  # then jumps to the non-symlinked location.
+    # Jumps to the symlinked mark directory,
+    # then jumps to the non-symlinked location.
     cd $mark; and cd (pwd -P)
   else
     echo "No such mark: $argv"
