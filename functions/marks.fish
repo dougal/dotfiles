@@ -17,7 +17,7 @@ function jump
   if test -e $mark
   # Jumps to the symlinked mark directory,
   # then jumps to the non-symlinked location.
-    cd $MARKPATH/$argv; and cd (pwd -P)
+    cd $mark; and cd (pwd -P)
   else
     echo "No such mark: $argv"
   end
