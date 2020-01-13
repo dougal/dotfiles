@@ -43,3 +43,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule "bundle/vim-ruby-interpolation"]
+	path = bundle/vim-ruby-interpolation
+	url = git@github.com:p0deje/vim-ruby-interpolation.git
