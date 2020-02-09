@@ -19,6 +19,12 @@ Install ag:
 
   Instructions for other OS: https://github.com/ggreer/the_silver_searcher#installing
 
+Install shellcheck:
+
+    brew install shellcheck
+
+  Instructions for other OS: https://github.com/koalaman/shellcheck#installing
+
 Switch to the `~/.vim` directory, and fetch submodules:
 
     cd ~/.vim

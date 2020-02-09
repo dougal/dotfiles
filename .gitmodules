@@ -46,3 +46,6 @@
 [submodule "bundle/vim-ruby-interpolation"]
 	path = bundle/vim-ruby-interpolation
 	url = git@github.com:p0deje/vim-ruby-interpolation.git
+[submodule "bundle/vim-shellcheck"]
+	path = bundle/vim-shellcheck
+	url = git@github.com:itspriddle/vim-shellcheck.git
