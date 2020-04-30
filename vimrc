@@ -88,6 +88,9 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
+" Run Sorbet type checker with `bundle exec srb`.
+let g:ale_ruby_sorbet_executable = 'bundle'
+
 " Keybinds for Tabular, taken from SPF13.
 nmap <Leader>a& :Tabularize /&<CR>
 vmap <Leader>a& :Tabularize /&<CR>
