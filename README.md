@@ -7,23 +7,14 @@ Create symlinks:
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
-Install fzf:
+Install system dependecies:
 
-    brew install fzf
+    brew bundle
 
-  Instructions for other OS: https://github.com/junegunn/fzf#installation
-
-Install ag:
-
-    brew install ag
-
-  Instructions for other OS: https://github.com/ggreer/the_silver_searcher#installing
-
-Install shellcheck:
-
-    brew install shellcheck
-
-  Instructions for other OS: https://github.com/koalaman/shellcheck#installing
+This installs the following:
+  * Fuzzy finder. [Installation for other OS](https://github.com/junegunn/fzf#installation)
+  * Silver Searcher. [Installation for other OS](https://github.com/ggreer/the_silver_searcher#installing)
+  * Shellcheck. [Installation for other OS](https://github.com/koalaman/shellcheck#installing)
 
 Switch to the `~/.vim` directory, and fetch submodules:
 
