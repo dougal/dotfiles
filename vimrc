@@ -4,7 +4,7 @@ syntax on
 filetype plugin indent on
 
 " Place swapfiles in tmp rather than working directory.
-:set dir=/tmp
+set dir=/tmp
 
 let mapleader = " "
 
