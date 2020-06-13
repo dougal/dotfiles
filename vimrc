@@ -37,6 +37,9 @@ set ts=2 sts=2 sw=2 expandtab
 " Absolute line numbering
 set number
 
+" Always show three lines around the cursor.
+set scrolloff=5
+
 " Update every 0.1s for fast gitgutter.
 set updatetime=100
 
