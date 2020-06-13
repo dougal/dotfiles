@@ -145,3 +145,6 @@ endfunction
 inoremap <expr> <tab> InsertTabWrapper()
 inoremap <s-tab> <c-n>
 
+" Save file on lost focus
+autocmd FocusLost * :wa
+
