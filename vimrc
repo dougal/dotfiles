@@ -37,7 +37,7 @@ set ts=2 sts=2 sw=2 expandtab
 " Absolute line numbering
 set number
 
-" Update ever 0.1s for fast gitgutter.
+" Update every 0.1s for fast gitgutter.
 set updatetime=100
 
 " GUI Background matches Macvim sidebar when used with vividchalk.
