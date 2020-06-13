@@ -8,6 +8,9 @@ set dir=/tmp
 
 let mapleader = " "
 
+" Disable NetRW file listing when opening new project.
+let loaded_netrwPlugin = 1
+
 " Invisibles the same as TextMate.
 set listchars=tab:->,space:·,eol:¬
 " Hide and show invisibles quickly.
