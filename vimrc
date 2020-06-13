@@ -34,7 +34,7 @@ set ts=2 sts=2 sw=2 expandtab
 
 :colorscheme vividchalk
 
-" Always display the gutter numbers.
+" Absolute line numbering
 set number
 
 " Update ever 0.1s for fast gitgutter.
