@@ -9,6 +9,7 @@ source $abbr_path/git.fish
 source $abbr_path/homebrew.fish
 source $abbr_path/macvim.fish
 source $abbr_path/rails.fish
+source $abbr_path/terraform.fish
 source $abbr_path/yarn.fish
 
 # Load initializers.
