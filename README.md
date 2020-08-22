@@ -14,7 +14,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
     cd ~/.vim
     git submodule update --init
 
-Install system dependecies:
+Install system dependencies:
 
     brew bundle
 
