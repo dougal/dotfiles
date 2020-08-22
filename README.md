@@ -23,5 +23,6 @@ This installs the following:
   * Silver Searcher. [Installation for other OS](https://github.com/ggreer/the_silver_searcher#installing)
   * Shellcheck. [Installation for other OS](https://github.com/koalaman/shellcheck#installing)
 
-Additional documentation: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+Additional documentation on [Synchronising plugs with git submodules and
+Pathogen](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/)
 
