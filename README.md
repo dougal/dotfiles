@@ -1,4 +1,6 @@
-Installation:
+# Installation
+
+Fetch the repo:
 
     git clone git://github.com/dougal/dotvim.git ~/.vim
 
