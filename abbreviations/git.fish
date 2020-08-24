@@ -5,8 +5,9 @@ abbr -a gc git commit
 abbr -a gca git commit -a
 abbr -a gco git checkout
 abbr -a gcof git checkout -f
+abbr -a gcp git cherry-pick
 abbr -a gd "git diff"
-abbr -a gdm "git diff | mvim -R -"
+abbr -a gdm "git diff | mvim -"
 abbr -a glog git log --graph --pretty=oneline --abbrev-commit --decorate --
 abbr -a gpl git pull
 abbr -a gps git push
