@@ -15,6 +15,7 @@ abbr -a gpp "git pull; and git push"
 abbr -a gres git reset
 abbr -a gresh git reset HEAD
 abbr -a grev git revert
+abbr -a grs git restore --staged
 abbr -a grm git rm
 abbr -a gst git status
 abbr -a gs git stash
