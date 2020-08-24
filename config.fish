@@ -6,9 +6,13 @@ source $abbr_path/bundler.fish
 source $abbr_path/ffmpeg.fish
 source $abbr_path/gem.fish
 source $abbr_path/git.fish
+source $abbr_path/hivemind.fish
 source $abbr_path/homebrew.fish
 source $abbr_path/macvim.fish
 source $abbr_path/rails.fish
+source $abbr_path/rubocop.fish
+source $abbr_path/terraform.fish
+source $abbr_path/tree.fish
 source $abbr_path/yarn.fish
 
 # Load initializers.
@@ -26,12 +30,13 @@ source $init_path/scripts.fish
 set -l func_path $config_path/functions
 source $func_path/go.fish
 source $func_path/marks.fish
+source $func_path/awsprofile.fish
 source $func_path/ssh-agent.fish
 source $func_path/ruby.fish
 
 # Client-specific config.
 set -l clients_path $config_path/clients
-source $clients_path/reachora.fish
+source $clients_path/*
 
 # Do not give a greeting
 set fish_greeting
