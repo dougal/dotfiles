@@ -10,6 +10,7 @@ source $abbr_path/hivemind.fish
 source $abbr_path/homebrew.fish
 source $abbr_path/macvim.fish
 source $abbr_path/rails.fish
+source $abbr_path/rubocop.fish
 source $abbr_path/terraform.fish
 source $abbr_path/yarn.fish
 
