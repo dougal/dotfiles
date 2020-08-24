@@ -36,7 +36,7 @@ source $func_path/ruby.fish
 
 # Client-specific config.
 set -l clients_path $config_path/clients
-source $clients_path/reachora.fish
+source $clients_path/*
 
 # Do not give a greeting
 set fish_greeting
