@@ -8,5 +8,6 @@ let g:ale_fixers = {
 \  'go': ['gofmt'],
 \  'json': ['prettier'],
 \  'ruby': ['rubocop'],
+\  'tf': ['terraform'],
 \}
 
