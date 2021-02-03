@@ -7,7 +7,7 @@ let g:ale_fixers = {
 \  '*': ['remove_trailing_lines', 'trim_whitespace'],
 \  'go': ['gofmt'],
 \  'json': ['prettier'],
-\  'ruby': ['srb', 'rubocop'],
+\  'ruby': ['sorbet', 'rubocop'],
 \  'tf': ['terraform'],
 \}
 
