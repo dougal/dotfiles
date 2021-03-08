@@ -1,3 +1,4 @@
+abbr -a tf terraform fmt
 abbr -a ti terraform init
 abbr -a tp terraform plan
 abbr -a ta terraform apply
