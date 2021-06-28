@@ -2,7 +2,7 @@
 set PATH $PATH ~/go/bin
 
 # Golang scripts.
-set PATH $PATH /usr/local/opt/go/libexec/bin
+set PATH $PATH (brew --prefix)/opt/go/libexec/bin
 
 # Golang workspace.
 set -x GOPATH $HOME/projects/go

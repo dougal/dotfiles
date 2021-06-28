@@ -1,2 +1,6 @@
 set HOMEBREW_NO_ANALYTICS true
-set PATH /usr/local/bin $PATH
+if test -e /opt/homebrew/bin/brew
+  set PATH /opt/homebrew/bin $PATH
+else
+  set PATH /usr/local/bin $PATH
+end

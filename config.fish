@@ -17,9 +17,10 @@ source $abbr_path/yarn.fish
 
 # Load initializers.
 set -l init_path $config_path/initializers
+# Homebrew needs to go first.
+source $init_path/homebrew.fish
 source $init_path/fzf_ag.fish
 source $init_path/go.fish
-source $init_path/homebrew.fish
 source $init_path/macvim.fish
 source $init_path/macvim.fish
 source $init_path/nodenv.fish
@@ -36,11 +37,11 @@ source $func_path/ruby.fish
 
 # Client-specific config.
 set -l clients_path $config_path/clients
-source $clients_path/*
+# source $clients_path/*
 
 # Do not give a greeting
 set fish_greeting
 
 # Editor
 set -Ux EDITOR 'vim'
-set -g fish_user_paths "/usr/local/opt/qt@5.5/bin" $fish_user_paths
+set -g fish_user_paths (brew --prefix)"/opt/qt@5.5/bin" $fish_user_paths
