@@ -3,8 +3,8 @@ abbr -a gap git add --patch
 abbr -a gb git branch
 abbr -a gc git commit
 abbr -a gca git commit -a
-abbr -a gco git checkout
-abbr -a gcof git checkout -f
+abbr -a gco echo "Use git switch (gsw)"
+abbr -a gcof echo "Use git restore (gre)"
 abbr -a gcp git cherry-pick
 abbr -a gd "git diff"
 abbr -a gdm "git diff | mvim -"
@@ -15,11 +15,12 @@ abbr -a gpp "git pull; and git push"
 abbr -a gres git reset
 abbr -a gresh git reset HEAD
 abbr -a grev git revert
-abbr -a grs git restore --staged
+abbr -a gre git restore
+abbr -a gres git restore --staged
 abbr -a grm git rm
 abbr -a gst git status
-abbr -a gs git stash
-abbr -a gsa git stash apply
-abbr -a gsl git stash list
-abbr -a gsp git stash pop
-abbr -a gss git stash save
+abbr -a gsw git switch
+abbr -a gsta git stash apply
+abbr -a gstl git stash list
+abbr -a gstp git stash pop
+abbr -a gsts git stash save
