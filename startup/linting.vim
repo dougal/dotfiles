@@ -9,5 +9,6 @@ let g:ale_fixers = {
 \  'json': ['prettier'],
 \  'ruby': ['sorbet', 'rubocop'],
 \  'tf': ['terraform'],
+\  'javascript': ['prettier'],
 \}
 
