@@ -14,6 +14,7 @@ set history=10000
 runtime startup/bindings.vim
 runtime startup/display.vim
 runtime startup/fuzzy-finder.vim
+runtime startup/gitgutter.vim
 runtime startup/invisibles.vim
 runtime startup/json.vim
 runtime startup/linting.vim
