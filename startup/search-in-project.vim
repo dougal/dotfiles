@@ -7,5 +7,5 @@ endif
 cnoreabbrev Ack Ack!
 
 " Nicer shortcut to get to Ack.
-nnoremap <leader>/ :ack!<space>
+nnoremap <leader>/ :Ack!<space>
 
