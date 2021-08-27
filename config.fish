@@ -5,6 +5,7 @@ set -l abbr_path $config_path/abbreviations
 source $abbr_path/bundler.fish
 source $abbr_path/ffmpeg.fish
 source $abbr_path/gem.fish
+source $abbr_path/gh.fish
 source $abbr_path/git.fish
 source $abbr_path/hivemind.fish
 source $abbr_path/homebrew.fish
