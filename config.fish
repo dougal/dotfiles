@@ -15,6 +15,7 @@ source $abbr_path/rails.fish
 source $abbr_path/rubocop.fish
 source $abbr_path/terraform.fish
 source $abbr_path/tree.fish
+source $abbr_path/vim.fish
 source $abbr_path/yarn.fish
 
 # Load initializers.
