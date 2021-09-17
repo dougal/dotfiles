@@ -1,5 +1,9 @@
 let mapleader = " "
 
+" Allow mouse select in terminal vim.
+set ttymouse=xterm2
+set mouse+=a
+
 " Help out my fat fingers
 command! Q q
 command! W w
