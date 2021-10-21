@@ -10,5 +10,6 @@ let g:ale_fixers = {
 \  'ruby': ['sorbet', 'rubocop'],
 \  'tf': ['terraform'],
 \  'javascript': ['prettier'],
+\  'sh': ['shellcheck'],
 \}
 
