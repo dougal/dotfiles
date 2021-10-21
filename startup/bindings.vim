@@ -8,6 +8,9 @@ set mouse+=a
 command! Q q
 command! W w
 
+" Don't accidentally end up in ex mode.
+nnoremap Q <Nop>
+
 " Disable arrow keys
 nnoremap <Left> :echo "No left for you!"<CR>
 vnoremap <Left> :<C-u>echo "No left for you!"<CR>
