@@ -25,3 +25,6 @@ runtime startup/tabularize.vim
 runtime startup/windows.vim
 runtime startup/wrapping.vim
 
+" Temporary whilst I work out what to keep.
+runtime startup/sensible.vim
+

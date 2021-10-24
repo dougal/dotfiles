@@ -3,8 +3,11 @@
 " Absolute line numbering
 set number
 
-" Always show three lines around the cursor.
+" Always show five lines around the cursor.
 set scrolloff=5
+
+" Always have at least 5 columns around the cursor.
+set sidescrolloff=5
 
 " Update every 0.1s for fast gitgutter.
 set updatetime=100
