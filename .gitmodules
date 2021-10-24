@@ -43,9 +43,6 @@
 [submodule "bundle/vim-ruby-interpolation"]
 	path = bundle/vim-ruby-interpolation
 	url = git@github.com:p0deje/vim-ruby-interpolation.git
-[submodule "bundle/vim-coffee-script"]
-	path = bundle/vim-coffee-script
-	url = git@github.com:kchmck/vim-coffee-script.git
 [submodule "bundle/vim-gh-line"]
 	path = bundle/vim-gh-line
 	url = git@github.com:ruanyl/vim-gh-line.git
