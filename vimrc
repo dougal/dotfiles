@@ -2,8 +2,17 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-syntax on
-filetype plugin indent on
+" Turn on syntax if available and not already enabled.
+if has('syntax') && !exists('g:syntax_on')
+  syntax enable
+endif
+
+" Turns on filetype detection.
+" Loads filetype-specific plugins if they exist.
+" Loads filtetype-specific indent files if they exist.
+if has('autocmd')
+  filetype plugin indent on
+endif
 
 " Place swapfiles in tmp rather than working directory.
 set dir=/tmp

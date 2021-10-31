@@ -2,18 +2,6 @@
 " Line-by-line explanation:
 " https://towardsdatascience.com/explaining-every-line-of-vim-sensible-b776affec51a
 
-" Turns on filetype detection.
-" Loads filetype-specific plugins if they exist.
-" Loads filtetype-specific indent files if they exist.
-if has('autocmd')
-  filetype plugin indent on
-endif
-
-" Turn on syntax if available and not already enabled.
-if has('syntax') && !exists('g:syntax_on')
-  syntax enable
-endif
-
 " Use :help 'option' to see the documentation for the given option.
 
 " Copies indent from current line when starting a new line.
