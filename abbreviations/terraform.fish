@@ -1,7 +1,7 @@
-abbr -a tf terraform fmt
-abbr -a ti terraform init
-abbr -a tp terraform plan
-abbr -a ta terraform apply
-abbr -a tay terraform apply -auto-approve
-abbr -a td terraform destroy
+abbr -a tff terraform fmt
+abbr -a tfi terraform init
+abbr -a tfp terraform plan
+abbr -a tfa terraform apply
+abbr -a tfay terraform apply -auto-approve
+abbr -a tfd terraform destroy
 
