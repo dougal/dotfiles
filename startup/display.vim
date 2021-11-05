@@ -16,6 +16,9 @@ set updatetime=100
 set title
 set visualbell
 
+" Make the sign column background the same as the line numbers.
+highlight! link SignColumn LineNr
+
 " GUI Background matches Macvim sidebar when used with vividchalk.
 highlight GitGutterAdd    guifg=#009900 guibg=#222222 ctermfg=2 ctermbg=Black
 highlight GitGutterChange guifg=#bbbb00 guibg=#222222 ctermfg=3 ctermbg=Black
