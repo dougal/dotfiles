@@ -1,6 +1,25 @@
-" From https://github.com/tpope/vim-pathogen
-call pathogen#infect()
-call pathogen#helptags()
+call plug#begin()
+Plug 'tpope/vim-commentary'
+if has('nvim')
+  Plug 'neovim/nvim-lspconfig'
+endif
+  Plug 'mileszs/ack.vim'
+  Plug 'dense-analysis/ale'
+  Plug 'docunext/closetag.vim'
+  Plug 'junegunn/fzf.vim'
+  Plug 'godlygeek/tabular'
+  Plug 'moll/vim-bbye'
+  Plug 'tpope/vim-commentary'
+  Plug 'ap/vim-css-color'
+  Plug 'tpope/vim-endwise'
+  Plug 'tpope/vim-fugitive'
+  Plug 'ruanyl/vim-gh-line'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'fatih/vim-go'
+  Plug 'p0deje/vim-ruby-interpolation'
+  Plug 'tpope/vim-sleuth'
+  Plug 'tpope/vim-surround'
+call plug#end()
 
 " Turn on syntax if available and not already enabled.
 if has('syntax') && !exists('g:syntax_on')

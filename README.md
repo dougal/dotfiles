@@ -10,10 +10,10 @@ Create symlinks:
     ln -s ~/.vim/gvimrc ~/.gvimrc
     ln -s ~/.vim ~/.config/nvim
 
-Switch to the `~/.vim` directory, and fetch submodules:
+Open a Vim process and install plugins:
 
-    cd ~/.vim
-    git submodule update --init
+    vim
+    :PlugInstall
 
 Install system dependencies:
 
