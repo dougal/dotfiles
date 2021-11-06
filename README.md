@@ -8,6 +8,9 @@ Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
+    mkdir -p ~/.config/nvim
+    ln -s ~/.vim/vimrc ~/.config/nvim/init.vim
+    ln -s ~/.vim/autoload ~/.config/nvim/autoload
 
 Switch to the `~/.vim` directory, and fetch submodules:
 
