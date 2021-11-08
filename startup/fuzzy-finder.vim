@@ -1,5 +1,5 @@
 " Handle different FZF install locations. Mostly for Apple Silicon Macs.
-if !empty('/opt/homebrew')
+if isdirectory('/opt/homebrew')
   set rtp+=/opt/homebrew/opt/fzf
 else
   set rtp+=/usr/local/opt/fzf
