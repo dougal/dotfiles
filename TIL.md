@@ -40,12 +40,16 @@ current or next set of double quotes on the current line.
 `gi` will jump back to the last insert in the current buffer.
 
 
-## Commands
+## Files
 
 When executing a command, `%` is the current file path. For example, if editing
 the current `.vimrc`, it could be reloaded with:
 
     :so %
+
+To reload the current file, discarding changes since last write:
+
+    :e!
 
 
 ## Variables
