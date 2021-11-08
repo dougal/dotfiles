@@ -1,4 +1,4 @@
-:colorscheme vividchalk
+colorscheme vividchalk
 
 " Absolute line numbering
 set number
