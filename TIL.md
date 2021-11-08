@@ -46,3 +46,11 @@ When executing a command, `%` is the current file path. For example, if editing
 the current `.vimrc`, it could be reloaded with:
 
     :so %
+
+
+## Variables
+
+To see the value of a variable, use `set`, the variable name, followed by `?`.
+For example, to see how many items of history there are:
+
+    :set history?
