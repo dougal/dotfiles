@@ -173,3 +173,8 @@ call s:hifg("Type"           ,"#AAAA77","Grey",57) " 101
 call s:hifg("Special"        ,"#33AA00","DarkGreen",24) " 7
 call s:hifg("Regexp"         ,"#44B4CC","DarkCyan",21) " 74
 call s:hifg("rubyMethod"     ,"#DDE93D","Yellow",77) " 191
+
+hi LspDiagnosticsDefaultError       guifg=#FF0000, ctermfg=Red
+hi LspDiagnosticsDefaultWarning     guifg=#FF6600, ctermfg=Brown
+hi LspDiagnosticsDefaultInformation guifg=#DDE93D, ctermfg=Yellow
+hi LspDiagnosticsDefaultHint        guifg=#0000FF, ctermfg=Blue
