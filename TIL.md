@@ -40,6 +40,13 @@ current or next set of double quotes on the current line.
 `gi` will jump back to the last insert in the current buffer.
 
 
+## Alignment
+
+`=` in visual mode will automatically align the selected lines. Also works in
+normal mode with a motion.
+
+`==` in normal mode will automatically align the current line.
+
 ## Files
 
 When executing a command, `%` is the current file path. For example, if editing
