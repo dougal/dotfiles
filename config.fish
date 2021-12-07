@@ -34,6 +34,7 @@ source $init_path/scripts.fish
 
 # Load functions.
 set -l func_path $config_path/functions
+source $func_path/git.fish
 source $func_path/go.fish
 source $func_path/marks.fish
 source $func_path/awsprofile.fish
