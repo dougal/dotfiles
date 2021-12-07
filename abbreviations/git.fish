@@ -7,7 +7,7 @@ abbr -a gco echo "Use git switch (gsw)"
 abbr -a gcof echo "Use git restore (gre)"
 abbr -a gcp git cherry-pick
 abbr -a gd "git diff"
-abbr -a gdm "git diff | mvim -"
+abbr -a gfp "git fetch -p"
 abbr -a glog git log --graph --pretty=oneline --abbrev-commit --decorate --
 abbr -a gpl git pull
 abbr -a gps git push
