@@ -39,6 +39,10 @@ current or next set of double quotes on the current line.
 
 `gi` will jump back to the last insert in the current buffer.
 
+When using `vim-commentary`, `gcap` will comment out a paragraph, which works
+for methods/functions in languages. This works in Ruby. If using
+`comment.nvim`, then `gcA` will open a trailing comment on the current line.
+
 
 ## Alignment
 
