@@ -65,3 +65,16 @@ To see the value of a variable, use `set`, the variable name, followed by `?`.
 For example, to see how many items of history there are:
 
     :set history?
+
+
+## Syntax Highlighting
+
+Nginx syntax highlighting can be found on the [vim.org scripts
+site](https://www.vim.org/scripts/script.php?script_id=1886), and after
+download can be enabled with:
+
+    :setfiletype nginx
+
+The short version of this is:
+
+    :setf nginx
