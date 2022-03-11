@@ -37,7 +37,11 @@ Using a movement with a bracket/quote/etc will operate on the current or next
 matching node in the line. For example, `ci"` will enter insert mode in the
 current or next set of double quotes on the current line.
 
-`gi` will jump back to the last insert in the current buffer.
+`gi` will jump back to the last insert in the current buffer, and enter insert
+mode.
+
+`gI` will jump to the first column, and enter insert mode. `I` only goes to the
+first non-blank character on the line.
 
 When using `vim-commentary`, `gcap` will comment out a paragraph, which works
 for methods/functions in languages. This works in Ruby. If using
