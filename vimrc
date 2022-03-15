@@ -15,6 +15,20 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
+
+" Completion
+if has('nvim')
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'hrsh7th/nvim-cmp'
+  Plug 'hrsh7th/cmp-buffer'
+  Plug 'hrsh7th/cmp-path'
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'quangnguyen30192/cmp-nvim-tags'
+  Plug 'onsails/lspkind-nvim' " Symbols in completion menu.
+
+  " Plug 'SirVer/ultisnips'
+  " Plug 'hrsh7th/cmp-nvim-ultisnips'
+endif
 call plug#end()
 
 " Turn on syntax if available and not already enabled.
@@ -47,11 +61,16 @@ runtime startup/json.vim
 runtime startup/linting.vim
 runtime startup/search-in-file.vim
 runtime startup/search-in-project.vim
-runtime startup/tab-autocomplete.vim
 runtime startup/tabs.vim
 runtime startup/tabularize.vim
 runtime startup/windows.vim
 runtime startup/wrapping.vim
+
+if has('nvim')
+  runtime startup/completion.lua
+else
+  runtime startup/tab-autocomplete.lua
+endif
 
 " Temporary whilst I work out what to keep.
 runtime startup/sensible.vim
