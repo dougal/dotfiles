@@ -38,6 +38,7 @@ set hidden
 set history=10000
 
 runtime startup/bindings.vim
+runtime startup/comments.vim
 runtime startup/display.vim
 runtime startup/fuzzy-finder.vim
 runtime startup/git.vim
