@@ -15,6 +15,7 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
+Plug 'jeffkreeftmeijer/vim-dim'
 
 " Completion
 if has('nvim')

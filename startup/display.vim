@@ -1,4 +1,4 @@
-colorscheme vividchalk
+colorscheme dim
 
 " Absolute line numbering
 set number
