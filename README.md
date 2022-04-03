@@ -38,3 +38,5 @@ This can be set as default in Terminal.app by opening preference, navigating to
 clicking the `Default` button in the bottom right of the source panel.
 
 Typeface should be Monaco 11.
+
+Select `Use bright colours for bold text`.
