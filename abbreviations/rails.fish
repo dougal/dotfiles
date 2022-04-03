@@ -1,4 +1,6 @@
-abbr -a r bundle exec rails
-abbr -a rdm "bundle exec rake db:migrate db:test:prepare"
+abbr -a r bin/rails
+abbr -a rc bin/rails console
+abbr -a rdb bin/rails dbconsole -p
+abbr -a rt bin/rails test
+abbr -a rdm "bin/rails db:migrate db:test:prepare"
 abbr -a cpd bundle exec cap production deploy
-abbr -a cpdq bundle exec cap production deploy:quick
