@@ -1,7 +1,14 @@
 colorscheme dim
 
-" Absolute line numbering
-set number
+" Hybrid line numbers for focussed normal-mode.
+" Absolute line numbers everywhere else.
+" From: https://jeffkreeftmeijer.com/vim-number/
+:set number
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+:  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+:augroup END
 
 " Always show five lines around the cursor.
 set scrolloff=5
