@@ -8,6 +8,8 @@ endif
 " Include hidden files, but not .gitignored files.
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 
+let g:fzf_colors = {}
+
 " All files
 nmap <leader>t :FZF<CR>
 
