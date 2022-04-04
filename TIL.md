@@ -86,3 +86,10 @@ download can be enabled with:
 The short version of this is:
 
     :setf nginx
+
+
+## HTML Output
+
+The current buffer can be outputted as HTML complete with syntax highlighting with:
+
+    :TOhtml
