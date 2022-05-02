@@ -164,6 +164,10 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 -- gem install --user-install solargraph
 require'lspconfig'.solargraph.setup{}
 
+-- Install Sorbet gem.
+-- gem install sorbet
+require'lspconfig'.sorbet.setup{}
+
 -- Download terraform-lsp binary from
 -- https://github.com/juliosueiras/terraform-lsp/releases and put in
 -- /usr/local/bin
