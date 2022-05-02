@@ -1,7 +1,6 @@
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
-Plug 'dense-analysis/ale'
 Plug 'docunext/closetag.vim'
 Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf.vim'
@@ -16,6 +15,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'jeffkreeftmeijer/vim-dim'
+
+if !has('nvim')
+  Plug 'dense-analysis/ale'
+endif
 
 " Completion
 if has('nvim')
@@ -59,7 +62,6 @@ runtime startup/fuzzy-finder.vim
 runtime startup/git.vim
 runtime startup/invisibles.vim
 runtime startup/json.vim
-runtime startup/linting.vim
 runtime startup/search-in-file.vim
 runtime startup/search-in-project.vim
 runtime startup/tabs.vim
@@ -71,6 +73,7 @@ if has('nvim')
   runtime startup/completion.lua
 else
   runtime startup/tab-autocomplete.lua
+  runtime startup/linting.vim
 endif
 
 " Temporary whilst I work out what to keep.
