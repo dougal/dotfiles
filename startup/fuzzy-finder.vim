@@ -8,7 +8,11 @@ endif
 " Include hidden files, but not .gitignored files.
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 
-let g:fzf_colors = {}
+" Fix weird highlights in Neovim. Leave untouched for vim as has opposite
+" effect there.
+if has('nvim')
+  let g:fzf_colors = {}
+endif
 
 " All files
 nmap <leader>t :FZF<CR>
