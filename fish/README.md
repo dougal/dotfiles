@@ -1,7 +1,7 @@
-= Fish
+# Fish
 
-== Setup
+## Setup
 
 ```shell
-ln -s ~/.dotfiles/fish ~/config/fish
+ln -s ~/.dotfiles/fish ~/.config/fish
 ```
