@@ -9,9 +9,10 @@ git clone git://github.com/dougal/dotvim.git ~/.vim
 Create symlinks:
 
 ```bash
-ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.vim/gvimrc ~/.gvimrc
-ln -s ~/.vim ~/.config/nvim
+ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+ln -s ~/.dotfiles/vim/gvimrc ~/.gvimrc
+ln -s ~/.dotfiles/vim ~/.vim
+ln -s ~/.dotfiles/vim ~/.config/nvim
 ```
 
 Plugins are managed by [Plug](https://github.com/junegunn/vim-plug). Open a Vim
