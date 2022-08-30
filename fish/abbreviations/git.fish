@@ -21,6 +21,7 @@ abbr -a grm git rm
 abbr -a gst git status
 abbr -a gsw git switch
 abbr -a gsta git stash apply
-abbr -a gstl git stash list
-abbr -a gstp git stash pop
-abbr -a gsts git stash save
+abbr -a gs git stash
+abbr -a gsl git stash list
+abbr -a gsp git stash pop
+abbr -a gss git stash save
