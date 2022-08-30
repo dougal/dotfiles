@@ -72,7 +72,6 @@ runtime startup/wrapping.vim
 if has('nvim')
   runtime startup/completion.lua
 else
-  runtime startup/tab-autocomplete.lua
   runtime startup/linting.vim
 endif
 
