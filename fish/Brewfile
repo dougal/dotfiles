@@ -1,0 +1,3 @@
+brew "fish"
+brew "fzf"
+brew "gh"
