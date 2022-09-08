@@ -1,3 +1,6 @@
+brew "vim"
+brew "neovim"
+
 # Silver Searcher
 brew "ag"
 
