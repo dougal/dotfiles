@@ -9,23 +9,23 @@ echo "Remember to install WWDC colourscheme - See vim/README.md"
 ################
 cd fish && brew bundle && cd -
 
-ln -s ./fish ~/.config/fish
+ln -sf $(pwd)/fish ~/.config/fish
 
 ################
 ## Tmux stuff ##
 ################
 cd tmux && brew bundle && cd -
 
-ln -s ./tmux/tmux.conf ~/.tmux.conf
+ln -sf $(pwd)/tmux/tmux.conf ~/.tmux.conf
 
 ###############
 ## Vim stuff ##
 ###############
 cd vim && brew bundle && cd -
 
-ln -s ./vim/vimrc ~/.vimrc
-ln -s ./vim/gvimrc ~/.gvimrc
-ln -s ./vim ~/.vim
-ln -s ./vim ~/.config/nvim
+ln -sf $(pwd)/vim/vimrc ~/.vimrc
+ln -sf $(pwd)/vim/gvimrc ~/.gvimrc
+ln -sf $(pwd)/vim ~/.vim
+ln -sf $(pwd)/vim ~/.config/nvim
 
 # TODO: PlugInstall command in vim and veovim
