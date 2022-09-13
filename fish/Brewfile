@@ -1,3 +1,6 @@
 brew "fish"
 brew "fzf"
 brew "gh"
+brew "pyenv"
+brew "rbenv"
+brew "nodenv"
