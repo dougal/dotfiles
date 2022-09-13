@@ -50,4 +50,3 @@ set fish_greeting
 
 # Editor
 set -Ux EDITOR 'vim'
-set -g fish_user_paths (brew --prefix)"/opt/qt@5.5/bin" $fish_user_paths
