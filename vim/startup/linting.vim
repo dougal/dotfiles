@@ -15,7 +15,6 @@ let fixers = {
 
 " Disable Ruby linters in Nvim as handled by lsp/solargraph.
 if !has('nvim')
-  " TODO: Have sorbet work in nvim.
   let fixers.ruby = ['sorbet', 'rubocop']
 endif
 
