@@ -33,13 +33,6 @@ cmp.setup {
       end,
     },
 
-    ["<tab>"] = cmp.mapping {
-      i = cmp.config.disable,
-      c = function(fallback)
-        fallback()
-      end,
-    },
-
     -- Testing
     ["<c-q>"] = cmp.mapping.confirm {
       behavior = cmp.ConfirmBehavior.Replace,
