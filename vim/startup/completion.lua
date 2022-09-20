@@ -5,6 +5,8 @@ lspkind.init()
 
 local cmp = require "cmp"
 
+local select_opts = {behaviour = cmp.SelectBehavior.Select}
+
 cmp.setup {
   mapping = {
     ['<C-p>'] = cmp.mapping.select_prev_item(select_opts),
