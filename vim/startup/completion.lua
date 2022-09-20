@@ -38,6 +38,7 @@ cmp.setup {
         buffer = "[buf]",
         nvim_lsp = "[LSP]",
         path = "[path]",
+        tags = "[tags]",
       },
 
       -- Disable symbols.
