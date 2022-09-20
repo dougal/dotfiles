@@ -21,27 +21,6 @@ cmp.setup {
       },
       { "i", "c" }
     ),
-
-    ["<c-space>"] = cmp.mapping {
-      i = cmp.mapping.complete(),
-      c = function(
-        _ --[[fallback]]
-      )
-        if cmp.visible() then
-          if not cmp.confirm { select = true } then
-            return
-          end
-        else
-          cmp.complete()
-        end
-      end,
-    },
-
-    -- Testing
-    ["<c-q>"] = cmp.mapping.confirm {
-      behavior = cmp.ConfirmBehavior.Replace,
-      select = true,
-    },
   },
 
   sources = {
@@ -51,13 +30,6 @@ cmp.setup {
     { name = "path" },
     -- { name = "luasnip" },
   },
-
-  -- Youtube: mention that you need a separate snippets plugin
-  -- snippet = {
-  --   expand = function(args)
-  --     require("luasnip").lsp_expand(args.body)
-  --   end,
-  -- },
 
   formatting = {
     format = lspkind.cmp_format {
