@@ -9,7 +9,17 @@ echo "Remember to install WWDC colourscheme - See vim/README.md"
 ################
 cd fish && brew bundle && cd -
 
+mkdir -p ~/.config
 ln -sf $(pwd)/fish ~/.config/fish
+
+# Check if already there before running.
+echo "$(brew --prefix)/bin/fish" | sudo tee -a /etc/shells
+
+# TODO: Check is not already the shell before running.
+chsh -s $(brew --prefix)/bin/fish
+
+# Create directory for marks.
+mkdir -p ~/.marks
 
 ################
 ## Tmux stuff ##
@@ -29,3 +39,5 @@ ln -sf $(pwd)/vim ~/.vim
 ln -sf $(pwd)/vim ~/.config/nvim
 
 # TODO: PlugInstall command in vim and veovim
+# TODO: Defaults writes for terminal settings
+# TODO: Install theme via script.
