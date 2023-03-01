@@ -5,3 +5,7 @@ set smartcase " ...except when search includes uppercase letters.
 set hlsearch " Highlight the current search...
 nmap <leader>f :nohlsearch<CR> " ...unhighlight search.
 
+
+" Put cursor on middle of screen when moving between matches.
+nnoremap n nzz
+nnoremap N Nzz

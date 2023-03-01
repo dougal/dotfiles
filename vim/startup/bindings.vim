@@ -13,6 +13,12 @@ command! W w
 " Don't accidentally end up in ex mode.
 nnoremap Q <Nop>
 
+" Put cursor on middle of screen when navigating vertically.
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap <C-f> <C-f>zz
+nnoremap <C-b> <C-b>zz
+
 " Disable arrow keys
 nnoremap <Left> :echo "No left for you!"<CR>
 vnoremap <Left> :<C-u>echo "No left for you!"<CR>
