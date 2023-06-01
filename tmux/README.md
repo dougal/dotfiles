@@ -3,5 +3,5 @@
 ## Setup
 
 ```shell
-ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -sf ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ```

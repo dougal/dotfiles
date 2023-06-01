@@ -5,7 +5,7 @@
 1. Link the config
 
 ```shell
-ln -s ~/.dotfiles/fish ~/.config/fish
+ln -sf ~/.dotfiles/fish ~/.config/fish
 ```
 
 2. Add fish as a system shell
