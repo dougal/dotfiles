@@ -192,3 +192,13 @@ require'lspconfig'.lua_ls.setup {
     },
   },
 }
+
+require'lspconfig'.gopls.setup{}
+
+-- Automatically manage Golang imports
+vim.api.nvim_create_autocmd('BufWritePre', {
+  pattern = '*.go',
+  callback = function()
+    vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })
+  end
+})
