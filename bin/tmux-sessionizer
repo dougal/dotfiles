@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+# From ThePrimeagen/dotfiles.
+# https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/scripts/tmux-sessionizer
+
+# If there is an argument, use that.
+if [[ $# -eq 1 ]]; then
+    selected=$1
+# Otherwise take a selection of likely dir locations and present their contents with fzf.
+else
+    selected=$(find ~/.dotfiles ~/Clients ~/Clients/**/repositories ~/Projects ~/Coding ~/Desktop -mindepth 0 -maxdepth 1 -type d | fzf)
+fi
+
+# If nothing selected, get out of here.
+if [[ -z $selected ]]; then
+    exit 0
+fi
+
+# Use the basename as the name for the session
+selected_name=$(basename "$selected" | tr . _)
+
+# Work out if tmux is running.
+tmux_running=$(pgrep tmux)
+
+# If we can tell tmux is running, create a session and switch to it.
+if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+    tmux new-session -s $selected_name -c $selected
+    exit 0
+fi
+
+# If there is no session with the desired name, create one.
+if ! tmux has-session -t=$selected_name 2> /dev/null; then
+    tmux new-session -ds $selected_name -c $selected
+fi
+
+# Switch to the new session.
+tmux switch-client -t $selected_name

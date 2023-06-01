@@ -1,5 +1,5 @@
 abbr -a ta "tmux attach"
-abbr -a tn "tmux new -s"
+abbr -a ts "tmux-sessionizer"
 
 # Fix SSH agent environment variable staleness.
 # Once a tmux session has been open for some time, the variable describing where
