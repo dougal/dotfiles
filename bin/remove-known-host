@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# Removes entries from known hosts based on a pattern
+
+known_hosts_loc="$HOME/.ssh/known_hosts"
+
+if [[ $# -eq 1 ]]; then
+  pattern=$1
+else
+  echo "No pattern provided"
+  exit 1
+fi
+
+matching_lines=$(grep "$pattern" "$known_hosts_loc")
+
+if [[ $matching_lines == "" ]]; then
+  echo "There are no matching entries. Exiting."
+  exit 0
+fi
+
+echo "The following entries will be removed:"
+echo ""
+echo "$matching_lines"
+echo ""
+read -p "Type 'yes' to confirm: " confirmation
+
+if [[ "$confirmation" != "yes" ]]; then
+  echo "Did not enter 'yes'. Aborting."
+  exit 0
+fi
+
+cp "$known_hosts_loc" "$known_hosts_loc.backup"
+
+echo "Backed-up existing known_hosts file."
+
+grep -v "$pattern" "$known_hosts_loc.backup" > "$known_hosts_loc"
+
+echo "Removed matching entries."
