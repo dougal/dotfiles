@@ -10,3 +10,5 @@ brew "fzf"
 # Shellcheck
 brew "shellcheck"
 
+# Golang LSP
+brew "gopls"
