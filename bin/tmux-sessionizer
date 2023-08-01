@@ -8,7 +8,7 @@ if [[ $# -eq 1 ]]; then
     selected=$1
 # Otherwise take a selection of likely dir locations and present their contents with fzf.
 else
-    selected=$(find ~/.dotfiles ~/Clients ~/Clients/**/repositories ~/Projects ~/Coding ~/Desktop -mindepth 0 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/.dotfiles ~/Clients/** ~/Clients/**/repositories ~/Projects ~/Coding ~/Desktop -mindepth 0 -maxdepth 1 -type d | fzf)
 fi
 
 # If nothing selected, get out of here.
