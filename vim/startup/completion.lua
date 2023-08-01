@@ -121,7 +121,9 @@ require'lspconfig'.solargraph.setup{}
 
 -- Install Sorbet gem.
 -- gem install sorbet
-require'lspconfig'.sorbet.setup{}
+require'lspconfig'.sorbet.setup{
+  cmd = { "srb", "tc", "--lsp", "--disable-watchman" }
+}
 
 -- Download terraform-lsp binary from
 -- https://github.com/juliosueiras/terraform-lsp/releases and put in
