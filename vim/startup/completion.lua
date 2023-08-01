@@ -112,8 +112,11 @@ cmp.setup.cmdline(":", {
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
--- Install Solargraph gem.
--- gem install --user-install solargraph
+-- Setup:
+-- $ gem install --user-install solargraph solargraph-rails
+-- $ solargraph config
+-- $ yard gems
+-- Add `solargraph-rails` to `plugins` in `.solargraph.yml`
 require'lspconfig'.solargraph.setup{}
 
 -- Install Sorbet gem.
