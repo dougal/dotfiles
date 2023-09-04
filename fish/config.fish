@@ -39,6 +39,7 @@ source $func_path/go.fish
 source $func_path/marks.fish
 source $func_path/awsprofile.fish
 source $func_path/ssh-agent.fish
+source $func_path/history.fish
 source $func_path/ruby.fish
 
 # Client-specific config.

@@ -1,4 +1,4 @@
-# Today I learned
+# Today I learned - Vim / Neovim
 
 Random things I have discovered about Vim that I will probably forget if I
 don't write them down.
