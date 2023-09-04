@@ -38,6 +38,6 @@ ln -sf $(pwd)/vim/gvimrc ~/.gvimrc
 ln -sf $(pwd)/vim ~/.vim
 ln -sf $(pwd)/vim ~/.config/nvim
 
-# TODO: PlugInstall command in vim and veovim
+# TODO: PlugInstall command in vim and neovim
 # TODO: Defaults writes for terminal settings
 # TODO: Install theme via script.
