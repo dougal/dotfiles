@@ -1,3 +1,5 @@
+vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, {})
+
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
 local lspkind = require "lspkind"
