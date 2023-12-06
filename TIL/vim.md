@@ -93,3 +93,11 @@ The short version of this is:
 The current buffer can be outputted as HTML complete with syntax highlighting with:
 
     :TOhtml
+
+
+## Normal Mode for Commands
+
+When in the command line (`:` or `/` etc), hit `CTRL-f` to enter the command
+window. Edit as required, then hit `<enter>`.
+
+Allows use of regular Vim keystrokes to edit a command.
