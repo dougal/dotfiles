@@ -44,8 +44,9 @@ mode.
 first non-blank character on the line.
 
 When using `vim-commentary`, `gcap` will comment out a paragraph, which works
-for methods/functions in languages. This works in Ruby. If using
-`comment.nvim`, then `gcA` will open a trailing comment on the current line.
+for methods/functions in languages. This works in Ruby. `gcgc` will uncomment
+the current line and any adjacent commented lines. If using `comment.nvim`,
+then `gcA` will open a trailing comment on the current line.
 
 
 ## Alignment
