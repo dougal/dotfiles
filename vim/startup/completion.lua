@@ -12,6 +12,16 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ["<C-Space>"] = cmp.mapping.complete(),
 })
 
+cmp.setup({
+  sources = {
+    { name = "nvim_lsp" },
+    { name = "buffer", keyword_length = 3 },
+    { name = "tags" },
+    { name = "path" },
+    -- { name = "luasnip" },
+    }
+})
+
 -- cmp_mappings['<Tab>'] = nil
 -- cmp_mappings['<S-Tab>'] = nil
 
