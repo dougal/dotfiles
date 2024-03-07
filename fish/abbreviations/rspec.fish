@@ -1,1 +1,1 @@
-abbr -a brs bundle exec rspec
+abbr -a brs bin/rspec
