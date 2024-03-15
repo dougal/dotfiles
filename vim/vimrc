@@ -32,12 +32,16 @@ if has('nvim')
   Plug 'quangnguyen30192/cmp-nvim-tags'
   Plug 'onsails/lspkind-nvim' " Symbols in completion menu.
 
+  " For harpoon
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'ThePrimeagen/harpoon'
+
   " Plug 'SirVer/ultisnips'
   " Plug 'hrsh7th/cmp-nvim-ultisnips'
 endif
 call plug#end()
 
-" Turn on syntax if available and not already enabled.
+" Turn on syntax if availabl and not already enabled.
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
@@ -73,6 +77,7 @@ runtime startup/wrapping.vim
 
 if has('nvim')
   runtime startup/completion.lua
+  runtime startup/harpoon.lua
 else
   runtime startup/linting.vim
 endif
