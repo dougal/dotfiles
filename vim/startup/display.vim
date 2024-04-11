@@ -33,7 +33,10 @@ highlight GitGutterDelete guifg=#ff2222 guibg=#222222 ctermfg=1 ctermbg=Black
 
 " Have jbuilder files be syntax highlighted as Ruby.
 au BufReadPost *.jbuilder set syntax=ruby
-"
+
+" Have handlebars files be syntax highlighted as HTML.
+au BufReadPost *.hbs set syntax=html
+
 " Disable NetRW file listing when opening new project.
 let loaded_netrwPlugin = 1
 
