@@ -2,6 +2,14 @@
 #
 # Checks to see if the profile exists before setting it.
 
+# Example profile with blank default and dummy profiles:
+
+# [default]
+#
+# [dummy]
+# aws_access_key_id = AKIAIOSFODNN7EXAMPLE
+# aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
 set AWS_PROFILES_PATH $HOME/.aws/credentials
 
 function awsprofile
