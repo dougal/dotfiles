@@ -43,9 +43,9 @@ mode.
 `gI` will jump to the first column, and enter insert mode. `I` only goes to the
 first non-blank character on the line.
 
-When using `vim-commentary`, `gcap` will comment out a paragraph, which works
-for methods/functions in languages. This works in Ruby. `gcgc` will uncomment
-the current line and any adjacent commented lines. If using `comment.nvim`,
+`gcap` will comment out a paragraph, which works for methods/functions in
+languages. This works in Ruby. `gcgc` will uncomment the current line and any
+adjacent commented lines. If using `comment.nvim`,
 then `gcA` will open a trailing comment on the current line.
 
 
