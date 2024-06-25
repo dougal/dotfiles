@@ -96,12 +96,19 @@ The current buffer can be outputted as HTML complete with syntax highlighting wi
     :TOhtml
 
 
+## URLs
+
+Whilst hovering over a URL or file path use `gx` to use the system `open`
+functionality.
+
+
 ## Normal Mode for Commands
 
 When in the command line (`:` or `/` etc), hit `CTRL-f` to enter the command
 window. Edit as required, then hit `<enter>`.
 
 Allows use of regular Vim keystrokes to edit a command.
+
 
 ## LSP Stuff
 
