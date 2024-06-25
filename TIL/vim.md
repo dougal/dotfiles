@@ -25,9 +25,14 @@ Making a visual selection then typing a substitution command will replace only
 the matches in the selection. 
 
 
+## Macros
+
+Use `Q` to run a macro on all visually selected lines.
+
+
 ## Text Objects
 
-`CTRL-a` will increment numbers. Either the number under the cursor, or the
+CTRL-a` will increment numbers. Either the number under the cursor, or the
 next number on the line. `CTRL-x` does the opposite. Be careful not to hit `z`.
 Both of these will operate on every number in a visual selection.
 
