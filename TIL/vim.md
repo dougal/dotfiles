@@ -103,8 +103,10 @@ window. Edit as required, then hit `<enter>`.
 
 Allows use of regular Vim keystrokes to edit a command.
 
-## Diagnostics
+## LSP Stuff
 
-When running Neovim with an LSP, and the LSP points out things wrong, navigate
-between these with `[d` to go to the next diagnostic, and `]d` to go to the
-previous diagnostic.
+Use `K` in normal mode to view information about the variable or function under
+the cursor.
+
+Navigate between diagnostics with `[d` to go to the next diagnostic, and `]d`
+to go to the previous diagnostic.
