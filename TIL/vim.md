@@ -102,3 +102,9 @@ When in the command line (`:` or `/` etc), hit `CTRL-f` to enter the command
 window. Edit as required, then hit `<enter>`.
 
 Allows use of regular Vim keystrokes to edit a command.
+
+## Diagnostics
+
+When running Neovim with an LSP, and the LSP points out things wrong, navigate
+between these with `[d` to go to the next diagnostic, and `]d` to go to the
+previous diagnostic.
