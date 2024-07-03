@@ -1,1 +1,1 @@
-autocmd FileType tf setlocal commentstring=#\ %s
+autocmd FileType terraform setlocal commentstring=#\ %s
