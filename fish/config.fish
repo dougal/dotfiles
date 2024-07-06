@@ -41,6 +41,7 @@ source $func_path/awsprofile.fish
 source $func_path/ssh-agent.fish
 source $func_path/history.fish
 source $func_path/ruby.fish
+source $func_path/terraform.fish
 
 # Client-specific config.
 set -l clients_path $config_path/clients

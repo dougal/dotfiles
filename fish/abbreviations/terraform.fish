@@ -1,7 +1,8 @@
-abbr -a tff terraform fmt
-abbr -a tfi terraform init
-abbr -a tfp terraform plan
-abbr -a tfa terraform apply
-abbr -a tfay terraform apply -auto-approve
-abbr -a tfd terraform destroy
+#Makes use of the `tf` function to be Terraform and OpenTofu agnostic.
+abbr -a tff tf fmt
+abbr -a tfi tf init
+abbr -a tfp tf plan
+abbr -a tfa tf apply
+abbr -a tfay tf apply -auto-approve
+abbr -a tfd tf destroy
 
