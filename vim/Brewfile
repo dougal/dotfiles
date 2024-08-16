@@ -12,3 +12,6 @@ brew "shellcheck"
 
 # Golang LSP
 brew "gopls"
+
+# Lua LSP
+brew "lua-language-server"
