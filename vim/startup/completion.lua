@@ -1,4 +1,5 @@
 local lsp = require("lsp-zero")
+local util = require 'lspconfig.util'
 
 -- Fix Undefined global 'vim'
 -- lsp.nvim_workspace()
@@ -185,12 +186,10 @@ require'lspconfig'.sorbet.setup{
   cmd = { "srb", "tc", "--lsp", "--disable-watchman" }
 }
 
--- Download terraform-lsp binary from
--- https://github.com/juliosueiras/terraform-lsp/releases and put in
--- /usr/local/bin
 require'lspconfig'.terraform_lsp.setup{
   -- Add .tf to default types.
-  filetypes = { "terraform", "hcl", "tf" }
+  filetypes = { "terraform", "hcl", "tf" },
+  root_dir = util.root_pattern(".terraform") -- remove .git
 }
 
 -- local lspconfig = require("lspconfig")
