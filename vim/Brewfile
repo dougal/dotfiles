@@ -7,9 +7,6 @@ brew "ag"
 # Fuzzy Finder
 brew "fzf"
 
-# Shellcheck
-brew "shellcheck"
-
 # Golang LSP
 brew "gopls"
 
@@ -18,3 +15,8 @@ brew "lua-language-server"
 
 # Terraform LSP
 brew "terraform-lsp"
+
+# Bash LSP
+brew "bash-language-server"
+brew "shellcheck"
+brew "shfmt"

@@ -173,6 +173,8 @@ cmp.setup.cmdline(":", {
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
+
+-- local util = require 'lspconfig.util'
 -- Setup:
 -- $ gem install --user-install solargraph solargraph-rails
 -- $ solargraph config
@@ -258,6 +260,8 @@ require'lspconfig'.lua_ls.setup {
 }
 
 require'lspconfig'.rust_analyzer.setup{}
+
+require'lspconfig'.bashls.setup{}
 
 require'lspconfig'.gopls.setup{}
 
