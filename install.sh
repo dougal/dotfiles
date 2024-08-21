@@ -40,6 +40,11 @@ ln -sf $(pwd)/vim/gvimrc ~/.gvimrc
 ln -sf $(pwd)/vim ~/.vim
 ln -sf $(pwd)/vim ~/.config/nvim
 
+###############
+## Git stuff ##
+###############
+cd git && bash install.sh && cd -
+
 # TODO: PlugInstall command in vim and neovim
 # TODO: Defaults writes for terminal settings
 # TODO: Install theme via script.
