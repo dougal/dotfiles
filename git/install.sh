@@ -1,5 +1,7 @@
 #!/bin/bash
 
+brew bundle
+
 mkdir -p ~/.git_template
 cp -r hooks ~/.git_template/
 
