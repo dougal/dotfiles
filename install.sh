@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xe
 
 export HOMEBREW_INSTALL_FROM_API=true
 
@@ -13,9 +13,11 @@ mkdir -p ~/.config
 ln -sf $(pwd)/fish ~/.config/fish
 
 # Check if already there before running.
+echo "Your password will be required to add fish to available shells..."
 echo "$(brew --prefix)/bin/fish" | sudo tee -a /etc/shells
 
 # TODO: Check is not already the shell before running.
+echo "Your password will be required to change shell..."
 chsh -s $(brew --prefix)/bin/fish
 
 # Create directory for marks.
