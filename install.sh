@@ -10,7 +10,7 @@ echo "Remember to install WWDC colourscheme - See vim/README.md"
 cd fish && brew bundle && cd -
 
 mkdir -p ~/.config
-ln -sf $(pwd)/fish ~/.config/fish
+ln -sf "$(pwd)/fish" ~/.config/fish
 
 # Check if already there before running.
 echo "Your password will be required to add fish to available shells..."
@@ -18,7 +18,7 @@ echo "$(brew --prefix)/bin/fish" | sudo tee -a /etc/shells
 
 # TODO: Check is not already the shell before running.
 echo "Your password will be required to change shell..."
-chsh -s $(brew --prefix)/bin/fish
+chsh -s "$(brew --prefix)/bin/fish"
 
 # Create directory for marks.
 mkdir -p ~/.marks
@@ -28,17 +28,17 @@ mkdir -p ~/.marks
 ################
 cd tmux && brew bundle && cd -
 
-ln -sf $(pwd)/tmux/tmux.conf ~/.tmux.conf
+ln -sf "$(pwd)/tmux/tmux.conf" ~/.tmux.conf
 
 ###############
 ## Vim stuff ##
 ###############
 cd vim && brew bundle && cd -
 
-ln -sf $(pwd)/vim/vimrc ~/.vimrc
-ln -sf $(pwd)/vim/gvimrc ~/.gvimrc
-ln -sf $(pwd)/vim ~/.vim
-ln -sf $(pwd)/vim ~/.config/nvim
+ln -sf "$(pwd)/vim/vimrc" ~/.vimrc
+ln -sf "$(pwd)/vim/gvimrc" ~/.gvimrc
+ln -sf "$(pwd)/vim" ~/.vim
+ln -sf "$(pwd)/vim" ~/.config/nvim
 
 ###############
 ## Git stuff ##
