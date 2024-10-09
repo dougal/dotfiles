@@ -5,3 +5,12 @@ function gnb
   git switch -c $branchname
 end
 
+# Create a new commit from bare words.
+function gcm
+  git commit -m "$argv"
+end
+
+# Add all tracked files and create a new commit from bare words.
+function gcam
+  git commit -a -m "$argv"
+end
