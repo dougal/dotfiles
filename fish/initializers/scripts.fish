@@ -1,2 +1,2 @@
-set PATH $HOME/bin $PATH
-set PATH $HOME/.dotfiles/bin $PATH
+fish_add_path --append $HOME/bin
+fish_add_path --append $HOME/.dotfiles/bin

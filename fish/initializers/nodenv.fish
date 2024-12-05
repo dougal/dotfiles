@@ -1,5 +1,5 @@
 # The following is obtained by running `nodenv init`.
 
-status --is-interactive; and source (nodenv init -|psub)
+status --is-interactive; and nodenv init - fish | source
 
-set PATH $PATH ./node_modules/.bin:$PATH
+fish_add_path --append --path ./node_modules/.bin

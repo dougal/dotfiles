@@ -1,9 +1,9 @@
 # Go binaries
-set PATH $PATH ~/go/bin
+fish_add_path --append --path ~/go/bin
 
 # Golang scripts.
-set PATH $PATH (brew --prefix)/opt/go/libexec/bin
+fish_add_path --append --path (brew --prefix)/opt/go/libexec/bin
 
 # Golang workspace.
 set -x GOPATH $HOME/projects/go
-set PATH $PATH $GOPATH/bin
+fish_add_path --append --path $GOPATH/bin

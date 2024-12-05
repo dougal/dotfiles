@@ -1,1 +1,1 @@
-set PATH /Applications/MacVim.app/Contents/bin $PATH
+fish_add_path --append /Applications/MacVim.app/Contents/bin

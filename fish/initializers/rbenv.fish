@@ -1,3 +1,3 @@
 # The following is obtained by running `rbenv init`.
 
-status --is-interactive; and source (rbenv init -|psub)
+status --is-interactive; and rbenv init - --no-rehash fish | source
