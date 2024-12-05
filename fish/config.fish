@@ -10,7 +10,6 @@ source $abbr_path/git.fish
 source $abbr_path/hivemind.fish
 source $abbr_path/homebrew.fish
 source $abbr_path/ls.fish
-source $abbr_path/macvim.fish
 source $abbr_path/rails.fish
 source $abbr_path/rubocop.fish
 source $abbr_path/terraform.fish
@@ -25,8 +24,6 @@ set -l init_path $config_path/initializers
 source $init_path/homebrew.fish
 source $init_path/fzf_ag.fish
 source $init_path/go.fish
-source $init_path/macvim.fish
-source $init_path/macvim.fish
 source $init_path/nodenv.fish
 source $init_path/pyenv.fish
 source $init_path/rbenv.fish
