@@ -1,0 +1,33 @@
+font-family = Monaco
+font-size = 11
+font-thicken = true
+
+# WWDC16 Dark
+# Based on WWDC16 color scheme, by Jeff Kreeftmeijer. https://github.com/jeffkreeftmeijer/wwdc16.terminal
+
+window-colorspace = srgb
+
+background = 292C36
+foreground = FFFFFF
+
+cursor-color = 8B8B8B
+selection-background = 314F78
+selection-foreground = FFFFFF
+
+palette = 0=292C36
+palette = 1=DC3C3C
+palette = 2=95C76F
+palette = 3=D28E5D
+palette = 4=8485CE
+palette = 5=B73999
+palette = 6=00ABA5
+palette = 7=A8ABB6
+
+palette = 8=424550
+palette = 9=FF7C7C
+palette = 10=D5FFAF
+palette = 11=FFCE9D
+palette = 12=C4C5FF
+palette = 13=F779D9
+palette = 14=40EBE5
+palette = 15=FFFFFF

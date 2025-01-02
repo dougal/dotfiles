@@ -30,6 +30,14 @@ cd tmux && brew bundle && cd -
 
 ln -sf "$(pwd)/tmux/tmux.conf" ~/.tmux.conf
 
+###################
+## Ghostty stuff ##
+###################
+cd ghostty && brew bundle && cd -
+
+mkdir  -p "$HOME/.config/ghostty"
+ln -sf "$(pwd)/ghostty/config" "$HOME/.config/ghostty/config"
+
 ###############
 ## Vim stuff ##
 ###############
