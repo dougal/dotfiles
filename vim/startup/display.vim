@@ -1,4 +1,8 @@
+" Works great with WWDC16 terminal theme.
 colorscheme dim
+
+" Use the terminal background colour
+hi Normal ctermbg=NONE guibg=NONE
 
 " Hybrid line numbers for focussed normal-mode.
 " Absolute line numbers everywhere else.
@@ -27,9 +31,9 @@ set visualbell
 highlight! link SignColumn LineNr
 
 " GUI Background matches Macvim sidebar when used with vividchalk.
-highlight GitGutterAdd    guifg=#009900 guibg=#222222 ctermfg=2 ctermbg=Black
-highlight GitGutterChange guifg=#bbbb00 guibg=#222222 ctermfg=3 ctermbg=Black
-highlight GitGutterDelete guifg=#ff2222 guibg=#222222 ctermfg=1 ctermbg=Black
+highlight GitGutterAdd    guifg=#009900 guibg=NONE ctermfg=2 ctermbg=Black
+highlight GitGutterChange guifg=#bbbb00 guibg=NONE ctermfg=3 ctermbg=Black
+highlight GitGutterDelete guifg=#ff2222 guibg=NONE ctermfg=1 ctermbg=Black
 
 " Have jbuilder files be syntax highlighted as Ruby.
 au BufReadPost *.jbuilder set syntax=ruby
