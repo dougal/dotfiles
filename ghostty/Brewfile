@@ -1,2 +1,4 @@
-brew "tmux"
-brew "fzf"
+# Install to User Applications so we do not need sudo
+cask_args appdir: "~/Applications"
+
+cask "ghostty"
