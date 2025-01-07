@@ -1,5 +1,6 @@
-" Works great with WWDC16 terminal theme.
-colorscheme dim
+if has('nvim')
+  colorscheme dracula
+endif
 
 " Use the terminal background colour
 hi Normal ctermbg=NONE guibg=NONE
