@@ -1,5 +1,5 @@
 if has('nvim')
-  colorscheme dracula
+  colorscheme wwdc16
 endif
 
 " Use the terminal background colour

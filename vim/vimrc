@@ -29,7 +29,7 @@ if has('nvim')
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'quangnguyen30192/cmp-nvim-tags'
   Plug 'onsails/lspkind-nvim' " Symbols in completion menu.
-  Plug 'Mofiqul/dracula.nvim' " Theme
+  Plug 'lifepillar/vim-wwdc16-theme' " Theme
 
   " For harpoon
   Plug 'nvim-lua/plenary.nvim'
