@@ -31,11 +31,6 @@ set visualbell
 " Make the sign column background the same as the line numbers.
 highlight! link SignColumn LineNr
 
-" GUI Background matches Macvim sidebar when used with vividchalk.
-highlight GitGutterAdd    guifg=#009900 guibg=NONE ctermfg=2 ctermbg=Black
-highlight GitGutterChange guifg=#bbbb00 guibg=NONE ctermfg=3 ctermbg=Black
-highlight GitGutterDelete guifg=#ff2222 guibg=NONE ctermfg=1 ctermbg=Black
-
 " Have jbuilder files be syntax highlighted as Ruby.
 au BufReadPost *.jbuilder set syntax=ruby
 
