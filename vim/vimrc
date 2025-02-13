@@ -30,10 +30,6 @@ if has('nvim')
   Plug 'quangnguyen30192/cmp-nvim-tags'
   Plug 'onsails/lspkind-nvim' " Symbols in completion menu.
 
-  " For harpoon
-  Plug 'nvim-lua/plenary.nvim'
-  Plug 'ThePrimeagen/harpoon'
-
   " Plug 'SirVer/ultisnips'
   " Plug 'hrsh7th/cmp-nvim-ultisnips'
 endif
