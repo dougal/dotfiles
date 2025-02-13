@@ -35,7 +35,7 @@ if has('nvim')
 endif
 call plug#end()
 
-" Turn on syntax if availabl and not already enabled.
+" Turn on syntax if available and not already enabled.
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
