@@ -71,7 +71,6 @@ runtime startup/wrapping.vim
 
 if has('nvim')
   runtime startup/completion.lua
-  runtime startup/harpoon.lua
 else
   runtime startup/linting.vim
 endif
