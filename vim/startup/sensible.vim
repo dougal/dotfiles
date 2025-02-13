@@ -18,7 +18,7 @@ set complete-=i
 set smarttab
 
 " When incrementing or decrementing, treat numbers with leading zeros as
-" decimals, rather thaan octals.
+" decimals, rather than octals.
 set nrformats-=octal
 
 " Wait 100ms for key codes to be completed.
