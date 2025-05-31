@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Rotates an AWS IAM key pair for a new pair replacing the ID and secret stored
+# in 1Password.
+
+USAGE="Usage:
+op-aws-rotate VaultName KeyName"
+
+vault_name="$1"
+key_name="$2"
+
+if [[ -z $vault_name ]]; then
+  echo "No argument for vault name."
+  echo "$USAGE"
+  exit 1
+fi
+
+if [[ -z $key_name ]]; then
+  echo "No argument for key name."
+  echo "$USAGE"
+  exit 1
+fi
+
+if [[ ! $(which op) ]]; then
+ echo "Command not found: op"
+ exit 1
+fi
+
+full_key_name="AWS IAM $key_name"
+
+current_aws_access_key_id=$(op item get --vault "$vault_name" "$full_key_name" --fields label=aws_access_key_id --reveal)
+current_aws_secret_access_key=$(op item get --vault "$vault_name" "$full_key_name" --fields label=aws_secret_access_key --reveal)
+
+# Create the new key
+response=$(AWS_ACCESS_KEY_ID=$current_aws_access_key_id AWS_SECRET_ACCESS_KEY=$current_aws_secret_access_key aws iam create-access-key)
+
+aws_access_key_id=$(echo "$response" | jq -r '.AccessKey.AccessKeyId')
+aws_secret_access_key=$(echo "$response" | jq -r '.AccessKey.SecretAccessKey')
+
+echo "Created access key $aws_access_key_id."
+
+# Store the new key
+op item edit --vault "$vault_name" "$full_key_name" \
+  aws_access_key_id="$aws_access_key_id" \
+  aws_secret_access_key="$aws_secret_access_key"
+
+echo "Waiting 5 seconds for the access key to become globally available..."
+sleep 5
+
+echo "Deleting access key $current_aws_access_key_id..."
+# Delete the original key
+AWS_ACCESS_KEY_ID=$aws_access_key_id \
+  AWS_SECRET_ACCESS_KEY=$aws_secret_access_key\
+  aws iam delete-access-key --access-key-id "$current_aws_access_key_id"
+
+echo "Deleted access key $current_aws_access_key_id."
