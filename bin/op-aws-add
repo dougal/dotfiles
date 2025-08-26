@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Stores the contents of an AWS IAM keys CSV from the Dashboard as an item in a 1Password vault.
+
+USAGE="Usage:
+op-aws-add path/to/accessKeys.csv KeyName"
+
+csv_path="$1"
+key_name="$2"
+
+if [[ -z $csv_path ]]; then
+  echo "No argument for csv path."
+  echo "$USAGE"
+  exit 1
+fi
+
+if [[ ! -f $csv_path ]]; then
+ echo "File does not exist: $csv_path"
+ exit 1
+fi
+
+if [[ -z $key_name ]]; then
+  echo "No argument for key name."
+  echo "$USAGE"
+  exit 1
+fi
+
+aws_access_key_id=$(awk -F',' 'NR==2 {print $1}' "$csv_path")
+aws_secret_access_key=$(awk -F',' 'NR==2 {print $2}' "$csv_path")
+
+if [[ ! $(which op) ]]; then
+ echo "Command not found: op"
+ exit 1
+fi
+
+full_key_name="AWS IAM $key_name"
+
+if [[ $(op item get "$full_key_name" 2>/dev/null) ]]; then
+ echo "Item '$full_key_name' already exists"
+ exit 1
+fi
+
+op item create --category="API Credential" --title="$full_key_name" \
+  "aws_access_key_id[text]=$aws_access_key_id" \
+  "aws_secret_access_key[password]=$aws_secret_access_key"

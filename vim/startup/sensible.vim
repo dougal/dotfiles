@@ -18,7 +18,7 @@ set complete-=i
 set smarttab
 
 " When incrementing or decrementing, treat numbers with leading zeros as
-" decimals, rather thaan octals.
+" decimals, rather than octals.
 set nrformats-=octal
 
 " Wait 100ms for key codes to be completed.
@@ -71,7 +71,7 @@ if &tabpagemax < 50
   set tabpagemax=50
 endif
 
-" Only save and restore global variables wihc start with an uppercase letter,
+" Only save and restore global variables which start with an uppercase letter,
 " and don't contain a lowercase letter.
 if !empty(&viminfo)
   set viminfo^=!

@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+# Formats AWS IAM credentials stored in 1Password into the format used by AWS
+# Config's `credential_process`.
+
+# See templates/aws_credentials.example for the correct format to make use of
+# this.
+
+# In the usage example below, the item contained in the `VaultName` vault
+# called `AWS IAM KeyName` would be formatted and printed out as a JSON string.
+USAGE="Usage:
+op-aws-to-json VaultName KeyName"
+
+vault_name="$1"
+key_name="$2"
+
+if [[ -z $vault_name ]]; then
+  echo "No argument for vault name."
+  echo "$USAGE"
+  exit 1
+fi
+
+if [[ -z $key_name ]]; then
+  echo "No argument for key name."
+  echo "$USAGE"
+  exit 1
+fi
+
+if [[ ! $(which op) ]]; then
+ echo "Command not found: op"
+ exit 1
+fi
+
+full_key_name="AWS IAM $key_name"
+
+cat <<END | op inject
+{
+  "Version": 1,
+  "AccessKeyId": "{{ op://${vault_name}/${full_key_name}/aws_access_key_id }}",
+  "SecretAccessKey": "{{ op://${vault_name}/${full_key_name}/aws_secret_access_key }}"
+}
+END

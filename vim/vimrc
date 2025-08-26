@@ -12,7 +12,7 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
-Plug 'jeffkreeftmeijer/vim-dim'
+Plug 'lifepillar/vim-wwdc16-theme'
 
 if !has('nvim')
   Plug 'dense-analysis/ale'
@@ -29,18 +29,13 @@ if has('nvim')
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'quangnguyen30192/cmp-nvim-tags'
   Plug 'onsails/lspkind-nvim' " Symbols in completion menu.
-  Plug 'lifepillar/vim-wwdc16-theme' " Theme
-
-  " For harpoon
-  Plug 'nvim-lua/plenary.nvim'
-  Plug 'ThePrimeagen/harpoon'
 
   " Plug 'SirVer/ultisnips'
   " Plug 'hrsh7th/cmp-nvim-ultisnips'
 endif
 call plug#end()
 
-" Turn on syntax if availabl and not already enabled.
+" Turn on syntax if available and not already enabled.
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
@@ -77,7 +72,6 @@ runtime startup/wrapping.vim
 
 if has('nvim')
   runtime startup/completion.lua
-  runtime startup/harpoon.lua
 else
   runtime startup/linting.vim
 endif
