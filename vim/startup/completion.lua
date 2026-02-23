@@ -173,97 +173,87 @@ cmp.setup.cmdline(":", {
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
+-- ===========
+-- LSP Configs
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
+-- ===========
 
--- local util = require 'lspconfig.util'
 -- Setup:
 -- $ gem install --user-install solargraph solargraph-rails
 -- $ solargraph config
--- $ yard gems
 -- Add `solargraph-rails` to `plugins` in `.solargraph.yml`
-require'lspconfig'.solargraph.setup{}
+vim.lsp.enable('solargraph')
 
--- Install Sorbet gem.
+-- OR use ruby_lsp
+-- vim.lsp.enable('ruby_lsp')
+
 -- gem install sorbet
-require'lspconfig'.sorbet.setup{
+vim.lsp.config('sorbet', {
   cmd = { "srb", "tc", "--lsp", "--disable-watchman" }
-}
+})
+vim.lsp.enable('sorbet')
 
-require'lspconfig'.terraform_lsp.setup{
+vim.lsp.config('terraform_lsp', {
   -- Add .tf to default types.
   filetypes = { "terraform", "hcl", "tf" },
   root_dir = util.root_pattern(".terraform") -- remove .git
-}
+})
+vim.lsp.enable('terraform_lsp')
 
--- local lspconfig = require("lspconfig")
--- local configs = require("lspconfig.configs")
--- local util = require("lspconfig.util")
 
--- if not configs.ruby_lsp then
--- 	local enabled_features = {
--- 		"documentHighlights",
--- 		"documentSymbols",
--- 		"foldingRanges",
--- 		"selectionRanges",
--- 		-- "semanticHighlighting",
--- 		"formatting",
--- 		"codeActions",
--- 	}
+vim.lsp.config('lua_ls', {
+  on_init = function(client)
+    if client.workspace_folders then
+      local path = client.workspace_folders[1].name
+      if
+        path ~= vim.fn.stdpath('config')
+        and (vim.uv.fs_stat(path .. '/.luarc.json') or vim.uv.fs_stat(path .. '/.luarc.jsonc'))
+      then
+        return
+      end
+    end
 
--- 	configs.ruby_lsp = {
--- 		default_config = {
--- 			-- cmd = { "bundle", "exec", "ruby-lsp" },
--- 			cmd = { "ruby-lsp" },
--- 			filetypes = { "ruby" },
--- 			root_dir = util.root_pattern("Gemfile", ".git"),
--- 			init_options = {
--- 				enabledFeatures = enabled_features,
--- 			},
--- 			settings = {},
--- 		},
--- 		commands = {
--- 			FormatRuby = {
--- 				function()
--- 					vim.lsp.buf.format({
--- 						name = "ruby_lsp",
--- 						async = true,
--- 					})
--- 				end,
--- 				description = "Format using ruby-lsp",
--- 			},
--- 		},
--- 	}
--- end
-
--- lspconfig.ruby_lsp.setup({ on_attach = on_attach, capabilities = capabilities })
-
-require'lspconfig'.lua_ls.setup {
-  settings = {
-    Lua = {
+    client.config.settings.Lua = vim.tbl_deep_extend('force', client.config.settings.Lua, {
       runtime = {
-        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+        -- Tell the language server which version of Lua you're using (most
+        -- likely LuaJIT in the case of Neovim)
         version = 'LuaJIT',
+        -- Tell the language server how to find Lua modules same way as Neovim
+        -- (see `:h lua-module-load`)
+        path = {
+          'lua/?.lua',
+          'lua/?/init.lua',
+        },
       },
-      diagnostics = {
-        -- Get the language server to recognize the `vim` global
-        globals = {'vim'},
-      },
+      -- Make the server aware of Neovim runtime files
       workspace = {
-        -- Make the server aware of Neovim runtime files
-        library = vim.api.nvim_get_runtime_file("", true),
+        checkThirdParty = false,
+        library = {
+          vim.env.VIMRUNTIME,
+          -- Depending on the usage, you might want to add additional paths
+          -- here.
+          -- '${3rd}/luv/library',
+          -- '${3rd}/busted/library',
+        },
+        -- Or pull in all of 'runtimepath'.
+        -- NOTE: this is a lot slower and will cause issues when working on
+        -- your own configuration.
+        -- See https://github.com/neovim/nvim-lspconfig/issues/3189
+        -- library = vim.api.nvim_get_runtime_file('', true),
       },
-      -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-        enable = false,
-      },
-    },
+    })
+  end,
+  settings = {
+    Lua = {},
   },
-}
+})
+vim.lsp.enable('lua_ls')
 
-require'lspconfig'.rust_analyzer.setup{}
+vim.lsp.enable('rust_analyzer')
 
-require'lspconfig'.bashls.setup{}
+vim.lsp.enable('bashls')
 
-require'lspconfig'.gopls.setup{}
+vim.lsp.enable('gopls')
 
 -- Automatically manage Golang imports
 vim.api.nvim_create_autocmd('BufWritePre', {
