@@ -20,13 +20,12 @@ endif
 
 " Completion
 if has('nvim')
-  Plug 'VonHeikemen/lsp-zero.nvim'
   Plug 'L3MON4D3/LuaSnip'
   Plug 'neovim/nvim-lspconfig'
-  Plug 'hrsh7th/nvim-cmp'
   Plug 'hrsh7th/cmp-buffer'
-  Plug 'hrsh7th/cmp-path'
   Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/cmp-path'
+  Plug 'hrsh7th/nvim-cmp'
   Plug 'quangnguyen30192/cmp-nvim-tags'
   Plug 'onsails/lspkind-nvim' " Symbols in completion menu.
 
