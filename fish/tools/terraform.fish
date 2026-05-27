@@ -1,3 +1,5 @@
+set -gx TF_PLUGIN_CACHE_DIR "$HOME/.terraform.d/plugin-cache"
+
 # Runs whichever of terraform or opentofu is installed
 function tf
 

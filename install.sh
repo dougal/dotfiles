@@ -53,6 +53,11 @@ ln -sf "$(pwd)/vim" ~/.config/nvim
 ###############
 cd git && bash install.sh && cd -
 
+#####################
+## Terraform stuff ##
+#####################
+mkdir -p "$HOME/.terraform.d/plugin-cache"
+
 # TODO: PlugInstall command in vim and neovim
 # TODO: Defaults writes for terminal settings
 # TODO: Install theme via script.
