@@ -46,6 +46,7 @@ source $func_path/ruby.fish
 # Load tools
 set -l tools_path $config_path/tools
 source $tools_path/difftastic.fish
+source $tools_path/rubocop.fish
 source $tools_path/terraform.fish
 
 # Client-specific config.

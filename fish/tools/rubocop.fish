@@ -1,3 +1,8 @@
+abbr -a rc rubocop
+abbr -a rcf rubocop -F
+abbr -a rca rubocop -a
+abbr -a rcA rubocop -A
+
 # Only run Rubocop on changed files
 function rcc
 	git fetch
