@@ -13,7 +13,6 @@ source $abbr_path/hivemind.fish
 source $abbr_path/homebrew.fish
 source $abbr_path/ls.fish
 source $abbr_path/rails.fish
-source $abbr_path/rubocop.fish
 source $abbr_path/tmux.fish
 source $abbr_path/tree.fish
 source $abbr_path/vim.fish
