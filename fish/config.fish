@@ -1,5 +1,13 @@
 set -l config_path $HOME/.config/fish
 
+# Load tools
+set -l tools_path $config_path/tools
+# Homebrew needs to go first.
+source $tools_path/homebrew.fish
+source $tools_path/difftastic.fish
+source $tools_path/rubocop.fish
+source $tools_path/terraform.fish
+
 # Load abbreviations.
 # Deprecated. Make a per-tool config and link below.
 set -l abbr_path $config_path/abbreviations
@@ -10,7 +18,6 @@ source $abbr_path/gem.fish
 source $abbr_path/gh.fish
 source $abbr_path/git.fish
 source $abbr_path/hivemind.fish
-source $abbr_path/homebrew.fish
 source $abbr_path/ls.fish
 source $abbr_path/rails.fish
 source $abbr_path/tmux.fish
@@ -21,8 +28,6 @@ source $abbr_path/yarn.fish
 # Load initializers.
 # Deprecated. Make a per-tool config and link below.
 set -l init_path $config_path/initializers
-# Homebrew needs to go first.
-source $init_path/homebrew.fish
 source $init_path/fzf_ag.fish
 source $init_path/go.fish
 source $init_path/nodenv.fish
@@ -41,12 +46,6 @@ source $func_path/awsprofile.fish
 source $func_path/ssh-agent.fish
 source $func_path/history.fish
 source $func_path/ruby.fish
-
-# Load tools
-set -l tools_path $config_path/tools
-source $tools_path/difftastic.fish
-source $tools_path/rubocop.fish
-source $tools_path/terraform.fish
 
 # Client-specific config.
 set -l clients_path $config_path/clients
