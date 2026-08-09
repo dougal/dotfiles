@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+set -uo pipefail
+
+# Backs up every set defined in ~/.config/restic/sets, or just the ones named
+# as arguments. Each set is backed up in turn, so one failing repository does
+# not stop the rest.
+
+USAGE="Usage:
+restic-backup [set...] [restic backup options...]
+
+Examples:
+restic-backup                      # Back up every set
+restic-backup home                 # Back up just the home set
+restic-backup home --dry-run -v    # Print out what the home set would change"
+
+sets_dir="${RESTIC_SETS_DIR:-$HOME/.config/restic/sets}"
+
+if [[ ${1:-} == "-h" || ${1:-} == "--help" ]]; then
+  echo "$USAGE"
+  exit 0
+fi
+
+names=()
+
+# Leading arguments are set names. Everything from the first option onwards is
+# passed through to restic.
+while [[ -n ${1:-} && ${1:-} != -* ]]; do
+  names+=("$1")
+  shift
+done
+
+if [[ ${#names[@]} -eq 0 ]]; then
+  for conf in "$sets_dir"/*.conf; do
+    [[ -f $conf ]] || continue
+    names+=("$(basename "$conf" .conf)")
+  done
+fi
+
+if [[ ${#names[@]} -eq 0 ]]; then
+  echo "No backup sets found in $sets_dir"
+  exit 1
+fi
+
+failed=()
+
+for name in "${names[@]}"; do
+  echo "==> Backing up $name"
+
+  if ! restic-set "$name" backup "$@"; then
+    failed+=("$name")
+  fi
+done
+
+if [[ ${#failed[@]} -gt 0 ]]; then
+  echo "Failed to back up: ${failed[*]}"
+  exit 1
+fi
